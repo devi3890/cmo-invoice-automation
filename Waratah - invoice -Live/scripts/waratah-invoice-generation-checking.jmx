@@ -1,0 +1,2970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="WPTH invoice reports" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.2.4.18. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="****** TEST PROPERTIES - DO NOT MODIFY START ******" elementType="Argument">
+            <stringProp name="Argument.name">****** TEST PROPERTIES - DO NOT MODIFY START ******</stringProp>
+            <stringProp name="Argument.value">****** TEST PROPERTIES - DO NOT MODIFY START ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="users" elementType="Argument">
+            <stringProp name="Argument.name">users</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.users)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.duration)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="startupDelay" elementType="Argument">
+            <stringProp name="Argument.name">startupDelay</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.startupDelay)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="rampup" elementType="Argument">
+            <stringProp name="Argument.name">rampup</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.rampup)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="randomDelay" elementType="Argument">
+            <stringProp name="Argument.name">randomDelay</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.randomDelay)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="constantDelay" elementType="Argument">
+            <stringProp name="Argument.name">constantDelay</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.constantDelay)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.protocol)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="serverName" elementType="Argument">
+            <stringProp name="Argument.name">serverName</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.serverName)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="serverPort" elementType="Argument">
+            <stringProp name="Argument.name">serverPort</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.serverPort)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="baseDir" elementType="Argument">
+            <stringProp name="Argument.name">baseDir</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.basedir)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="loopCount" elementType="Argument">
+            <stringProp name="Argument.name">loopCount</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.loopCount)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** TEST PROPERTIES - DO NOT MODIFY END ******" elementType="Argument">
+            <stringProp name="Argument.name">****** TEST PROPERTIES - DO NOT MODIFY END ******</stringProp>
+            <stringProp name="Argument.value">****** TEST PROPERTIES - DO NOT MODIFY END ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="    " elementType="Argument">
+            <stringProp name="Argument.name">    </stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** USER PROPERTIES - START ******" elementType="Argument">
+            <stringProp name="Argument.name">****** USER PROPERTIES - START ******</stringProp>
+            <stringProp name="Argument.value">****** USER PROPERTIES - START ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="userSessionLoopCount" elementType="Argument">
+            <stringProp name="Argument.name">userSessionLoopCount</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.userSessionLoopCount)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** USER PROPERTIES - END ******" elementType="Argument">
+            <stringProp name="Argument.name">****** USER PROPERTIES - END ******</stringProp>
+            <stringProp name="Argument.value">****** USER PROPERTIES - END ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="     " elementType="Argument">
+            <stringProp name="Argument.name">     </stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** FRAMEWORK PROPERTIES - NOT TO BE MODIFIED START ******" elementType="Argument">
+            <stringProp name="Argument.name">****** FRAMEWORK PROPERTIES - NOT TO BE MODIFIED START ******</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dataFile" elementType="Argument">
+            <stringProp name="Argument.name">dataFile</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.dataFile)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="jmeter.save.saveservice.responseHeaders" elementType="Argument">
+            <stringProp name="Argument.name">jmeter.save.saveservice.responseHeaders</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="jmeter.save.saveservice.requestHeaders" elementType="Argument">
+            <stringProp name="Argument.name">jmeter.save.saveservice.requestHeaders</stringProp>
+            <stringProp name="Argument.value">true</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="debug" elementType="Argument">
+            <stringProp name="Argument.name">debug</stringProp>
+            <stringProp name="Argument.value">false</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** FRAMEWORK PROPERTIES - NOT TO BE MODIFIED END  ******" elementType="Argument">
+            <stringProp name="Argument.name">****** FRAMEWORK PROPERTIES - NOT TO BE MODIFIED END  ******</stringProp>
+            <stringProp name="Argument.value">****** FRAMEWORK PROPERTIES - NOT TO BE MODIFIED END  ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="auth" elementType="Argument">
+            <stringProp name="Argument.name">auth</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.auth)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="inv" elementType="Argument">
+            <stringProp name="Argument.name">inv</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.inv)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="token" elementType="Argument">
+            <stringProp name="Argument.name">token</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="auth-common" elementType="Argument">
+            <stringProp name="Argument.name">auth-common</stringProp>
+            <stringProp name="Argument.value">Basic YWRtaW46YWRtaW4=</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${serverName}</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="responseType" elementType="Header">
+            <stringProp name="Header.name">responseType</stringProp>
+            <stringProp name="Header.value">json</stringProp>
+          </elementProp>
+          <elementProp name="Authorization" elementType="Header">
+            <stringProp name="Header.name">Authorization</stringProp>
+            <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+          </elementProp>
+          <elementProp name="Content-Type" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="Accept" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+          </elementProp>
+          <elementProp name="x-access-token" elementType="Header">
+            <stringProp name="Header.name">x-access-token</stringProp>
+            <stringProp name="Header.value">${token1}</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">client-id</stringProp>
+            <stringProp name="Header.value">${clientId}</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">skip-ip-check</stringProp>
+            <stringProp name="Header.value">1</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">PostmanRuntime/7.44.0</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="testData" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">data/master-data.csv</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames"></stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="[TF] Form-One" enabled="true"/>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="[SC] Execute" enabled="true">
+          <stringProp name="TestPlan.comments">Wrapper controller for the main function</stringProp>
+        </GenericController>
+        <hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="[IF] Debug" enabled="true">
+            <stringProp name="IfController.condition">&quot;${debug}&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug [CR] - 0" enabled="true">
+              <stringProp name="TestPlan.comments">Use this to debug variable values before the evaluation</stringProp>
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="[SC] Form-One" enabled="true"/>
+          <hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="login" enabled="true">
+              <boolProp name="TransactionController.includeTimers">false</boolProp>
+              <boolProp name="TransactionController.parent">false</boolProp>
+            </TransactionController>
+            <hashTree/>
+            <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="generate-ClientId" enabled="true">
+              <stringProp name="scriptLanguage">javascript</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">var clientId = Math.random().toString(36).slice(2).toUpperCase()
+log.info(&quot;clientId is..&quot;+clientId)
+vars.put(&quot;clientId&quot;,clientId)
+
+
+
+</stringProp>
+            </JSR223Sampler>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="instant_token" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;host&quot;:&quot;&quot;,&quot;ip&quot;:&quot;127.0.0.1&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">auth-node/instant_token</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="responseType" elementType="Header">
+                    <stringProp name="Header.name">responseType</stringProp>
+                    <stringProp name="Header.value">json</stringProp>
+                  </elementProp>
+                  <elementProp name="Authorization" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">x-access-token</stringProp>
+                    <stringProp name="Header.value"></stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">client-id</stringProp>
+                    <stringProp name="Header.value">${clientId}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">instantToken</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.token</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+log.info(data);</stringProp>
+                <stringProp name="scriptLanguage">javascript</stringProp>
+              </JSR223PostProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="auth-node/login" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;uname&quot;:&quot;anusha&quot;,&quot;upwd&quot;:&quot;U2FsdGVkX1+mpC1ktLoiYW2NfVc+5MGttVAdQpAdlwI=&quot;,&quot;device_os&quot;:&quot;Linux - chrome - 142.0.0&quot;,&quot;device_type&quot;:3,&quot;is_email_otp&quot;:0}&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">auth-node/login</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="responseType" elementType="Header">
+                    <stringProp name="Header.name">responseType</stringProp>
+                    <stringProp name="Header.value">json</stringProp>
+                  </elementProp>
+                  <elementProp name="Authorization" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${auth-common}</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                  </elementProp>
+                  <elementProp name="x-access-token" elementType="Header">
+                    <stringProp name="Header.name">x-access-token</stringProp>
+                    <stringProp name="Header.value">${instantToken}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">client-id</stringProp>
+                    <stringProp name="Header.value">${clientId}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">token</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.data</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="loginsettings" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;username&quot;:&quot;rgarikapati&quot;,&quot;userpass&quot;:&quot;U2FsdGVkX1+mpC1ktLoiYW2NfVc+5MGttVAdQpAdlwI=&quot;,&quot;token&quot;:&quot;${token}&quot;,&quot;memberid&quot;:&quot;sc14c1499e1a370f&quot;}&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">auth-node/loginsettings</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="responseType" elementType="Header">
+                    <stringProp name="Header.name">responseType</stringProp>
+                    <stringProp name="Header.value">json</stringProp>
+                  </elementProp>
+                  <elementProp name="Authorization" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${auth-common}</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                  </elementProp>
+                  <elementProp name="x-access-token" elementType="Header">
+                    <stringProp name="Header.name">x-access-token</stringProp>
+                    <stringProp name="Header.value">${token}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">client-id</stringProp>
+                    <stringProp name="Header.value">${clientId}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user/ispatient" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">ums-node/user/ispatient</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="responseType" elementType="Header">
+                    <stringProp name="Header.name">responseType</stringProp>
+                    <stringProp name="Header.value">json</stringProp>
+                  </elementProp>
+                  <elementProp name="Authorization" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${auth-common}</stringProp>
+                  </elementProp>
+                  <elementProp name="Content-Type" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                  </elementProp>
+                  <elementProp name="x-access-token" elementType="Header">
+                    <stringProp name="Header.name">x-access-token</stringProp>
+                    <stringProp name="Header.value">${token}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">client-id</stringProp>
+                    <stringProp name="Header.value">${clientId}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="[IF] Login Success" enabled="true">
+              <stringProp name="TestPlan.comments">Proceed further only if login is successful</stringProp>
+              <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+              <boolProp name="IfController.evaluateAll">true</boolProp>
+              <boolProp name="IfController.useExpression">true</boolProp>
+            </IfController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="auth-v2-node/db/wat" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&#xd;
+  &quot;memberid&quot;: &quot;sc15f06ae4a74f3d&quot;,&#xd;
+  &quot;sid&quot;: 39,&#xd;
+  &quot;sesuid&quot;: 0,&#xd;
+  &quot;role_id&quot;: 21,&#xd;
+  &quot;hid&quot;: 106,&#xd;
+  &quot;login_access_type&quot;: 2,&#xd;
+  &quot;ums_folder_path&quot;: &quot;ums/4.3.41&quot;,&#xd;
+  &quot;service_folder_path&quot;: &quot;modpay/3.0.72&quot;,&#xd;
+  &quot;redirectionPath&quot;: &quot;https://portal.bijib.com/modpay/3.0.72&quot;&#xd;
+}&#xd;
+</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">auth-v2-node/db/wat</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="responseType" elementType="Header">
+                      <stringProp name="Header.name">responseType</stringProp>
+                      <stringProp name="Header.value">json</stringProp>
+                    </elementProp>
+                    <elementProp name="Authorization" elementType="Header">
+                      <stringProp name="Header.name">Authorization</stringProp>
+                      <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                    </elementProp>
+                    <elementProp name="client-id" elementType="Header">
+                      <stringProp name="Header.name">client-id</stringProp>
+                      <stringProp name="Header.value">${clientId}</stringProp>
+                    </elementProp>
+                    <elementProp name="x-access-token" elementType="Header">
+                      <stringProp name="Header.name">x-access-token</stringProp>
+                      <stringProp name="Header.value">${token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">webToken</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">$.web_token</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="auth-node/web_access_token" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;access_code&quot;:&quot;ePPDboY4SfhmCJA9&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">auth-node/web_access_token</stringProp>
+                <stringProp name="HTTPSampler.method">PUT</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="responseType" elementType="Header">
+                      <stringProp name="Header.name">responseType</stringProp>
+                      <stringProp name="Header.value">json</stringProp>
+                    </elementProp>
+                    <elementProp name="Authorization" elementType="Header">
+                      <stringProp name="Header.name">Authorization</stringProp>
+                      <stringProp name="Header.value">Basic YWRtaW46YWRtaW4=</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                    </elementProp>
+                    <elementProp name="client-id" elementType="Header">
+                      <stringProp name="Header.name">client-id</stringProp>
+                      <stringProp name="Header.value">${clientId}</stringProp>
+                    </elementProp>
+                    <elementProp name="x-access-token" elementType="Header">
+                      <stringProp name="Header.name">x-access-token</stringProp>
+                      <stringProp name="Header.value">${token}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">webTokenId</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.id</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="auth-node/service_auth_token" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;id&quot;:235553,&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;,&quot;hid&quot;:106,&quot;sid&quot;:39,&quot;sesuid&quot;:0,&quot;role_id&quot;:21,&quot;login_access_type&quot;:2,&quot;ums_folder_path&quot;:&quot;&quot;,&quot;service_folder_path&quot;:&quot;modpay/3.0.49&quot;}&#xd;
+</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">auth-node/service_auth_token</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="responseType" elementType="Header">
+                      <stringProp name="Header.name">responseType</stringProp>
+                      <stringProp name="Header.value">json</stringProp>
+                    </elementProp>
+                    <elementProp name="Authorization" elementType="Header">
+                      <stringProp name="Header.name">Authorization</stringProp>
+                      <stringProp name="Header.value">${auth-common}</stringProp>
+                    </elementProp>
+                    <elementProp name="Content-Type" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="Accept" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                    </elementProp>
+                    <elementProp name="x-access-token" elementType="Header">
+                      <stringProp name="Header.name">x-access-token</stringProp>
+                      <stringProp name="Header.value">${token}</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">client-id</stringProp>
+                      <stringProp name="Header.value">${clientId}</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                  <stringProp name="JSONPostProcessor.referenceNames">token1; roleid</stringProp>
+                  <stringProp name="JSONPostProcessor.jsonPathExprs">$.data; $.roles[0].role_id</stringProp>
+                  <stringProp name="JSONPostProcessor.match_numbers">1; 1</stringProp>
+                  <stringProp name="JSONPostProcessor.defaultValues">a; b</stringProp>
+                </JSONPostProcessor>
+                <hashTree/>
+                <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+                  <stringProp name="JSON_PATH">$.status</stringProp>
+                  <stringProp name="EXPECTED_VALUE">true</stringProp>
+                  <boolProp name="JSONVALIDATION">true</boolProp>
+                  <boolProp name="EXPECT_NULL">false</boolProp>
+                  <boolProp name="INVERT">false</boolProp>
+                  <boolProp name="ISREGEX">true</boolProp>
+                </JSONPathAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="auth-node/servicesidebarlinks" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sid&quot;:39,&quot;sesuid&quot;:0,&quot;role_id&quot;:21,&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">auth-node/servicesidebarlinks</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="super_contribution/supercapeffectivedate" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;effective_date&quot;:&quot;2025-12-22&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/settings/super_contribution/supercapeffectivedate</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="user/eligibility" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sid&quot;:45,&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;,&quot;eff_date&quot;:&quot;2025-12-28&quot;,&quot;usertype&quot;:2,&quot;inv_gen_priority_id&quot;:28,&quot;login_role_id&quot;:21}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/user/eligibility</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="holidayListBeeway" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hospital_id&quot;: 106}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">beeway-node/settings/holidays/details</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+
+var holidayNames = [];
+var holidayDates = [];
+
+for (var i = 0; i &lt; data.length; i++) {
+    holidayNames.push(data[i].holiday_name);
+    holidayDates.push(data[i].h_date);
+}
+
+// Store as JSON arrays (correct array format)
+vars.put(&quot;holidayNames&quot;, JSON.stringify(holidayNames));
+vars.put(&quot;holidayDates&quot;, JSON.stringify(holidayDates));
+
+//log.info(&quot;holidayNames array: &quot; + JSON.stringify(holidayNames));
+//log.info(&quot;holidayDates array: &quot; + JSON.stringify(holidayDates));
+
+//log.info(&quot;holidayNames&quot;+holidayNames.length)
+//log.info(&quot;holidayDates&quot;+holidayDates.length)
+
+
+
+</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="modpay-node/mm/common/getcurrentdate" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/getcurrentdate</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="reports/inv_profile_details_report/inv_profile_alert_details" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/reports/inv_profile_details_report/inv_profile_alert_details</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="common/get_user_sub_services_roles" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;,&quot;sid&quot;:45}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/get_user_sub_services_roles</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="settings/email_pdf_sent_settings/get_data" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/settings/email_pdf_sent_settings/get_data</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="common/invoice_subservices" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sid&quot;:45,&quot;inv_timesheet&quot;:0,&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/invoice_subservices</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_timestamp_next_timestamp_between_dates" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/get_timestamp_next_timestamp_between_dates</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="common/getInvoiceRuleRoles" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sesuid&quot;:[19],&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;,&quot;inv_gen_priority_id&quot;:27}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/getInvoiceRuleRoles</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="common/paycycle_type" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sesuid&quot;:19}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/paycycle_type</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generate/generated_invoices" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:29,&quot;pay_cycle_month&quot;:12,&quot;pay_cycle_year&quot;:2025,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;2025-12-15&quot;,&quot;invoice_end_date&quot;:&quot;2025-12-28&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2025-12-15&quot;,&quot;end_date&quot;:&quot;2025-12-28&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:106,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/generate/generated_invoices</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generate/inv_users" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sid&quot;:45,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:29,&quot;pay_cycle_month&quot;:12,&quot;pay_cycle_year&quot;:2025,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;15/12/2025&quot;,&quot;invoice_end_date&quot;:&quot;28/12/2025&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2025-12-15&quot;,&quot;end_date&quot;:&quot;2025-12-28&quot;,&quot;role_id&quot;:[40],&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:3,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;payCycle_stime&quot;:420,&quot;payCycle_etime&quot;:420,&quot;decimalCalObj&quot;:{&quot;hid&quot;:106,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;is_rac&quot;:false,&quot;hos_config_data&quot;:&quot;W3siX2lkIjoiNjg3YTU3MTAzNTgxYTE0ODNhNjY2ODQ3IiwiaWQiOjMsImhpZCI6MTA2LCJpbnZfZ2VuX3ByaW9yaXR5X2lkIjoyOSwiaXNfYWMiOjEsImlzX3NhIjoxLCJpc19zYV9wcm9maWxlIjoxLCJkaXNwbGF5X2NwaSI6MCwiaXNfcHN0IjowLCJpc19icGMiOjAsImlzX3Byb2ZpbGVfYWRkcmVzc19kaXNwbGF5IjowLCJkZWNpbWFsX2NhbGN1bGF0aW9uIjoie1wiaGlkXCI6MTA2LFwiaXNSb3VuZE9mZlwiOjEsXCJkZWNpbWFsQ250XCI6MixcImRpc3BsYXlEZWNpbWFsQ250XCI6MixcImRpc3BsYXlfc2lnbl9vZmZcIjoxfSIsImVudHJ5X2FsbG93X3N1Yl9zZXJ2aWNlcyI6IntcInN1Yl9zZXJ2aWNlc1wiOltdfSIsImNyZWF0ZWRfYnkiOiJzYzE1ZWJlNzQ4MThlNTliIiwiY3JlYXRlZF9uYW1lIjoiUGF2YW4gS3VtYXIiLCJjcmVhdGVkX2RhdGUiOiIyMDI0LTA1LTMwVDE0OjAwOjAwLjAwMFoiLCJtb2RpZmllZF9ieSI6InNjMTVlYmU3NDgxOGU1OWIiLCJtb2RpZmllZF9uYW1lIjoiUGF2YW4gS3VtYXIiLCJtb2RpZmllZF9kYXRlIjoiMjAyNC0wNS0zMFQxNDowMDowMC4wMDBaIiwibnVyc2VfdGltZXNoZWV0IjowLCJpc19jcmVkaXRub3RlX3ZpZXciOjAsImlzX2NyX25lZ2F0aXZlX2dlbmVyYXRpb24iOjAsImRvY3Rvcl90aW1lc2hlZXQiOjAsImdzdF9yb3VuZG9mZiI6MCwic2FfZXhjbHVkZWRfaW52c3VtIjowLCJmdXR1cmVfZ2VuZXJhdGlvbl9hbGxvdyI6MH1d&quot;,&quot;login_role_id&quot;:21}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/generate/inv_users</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="invoice_tax_settings/paging" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;page_num&quot;:0,&quot;page_limit&quot;:200,&quot;total_records&quot;:&quot;0&quot;,&quot;excell_data&quot;:1}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/settings/invoice_tax_settings/paging</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="superTax_with_efective_dates_patientseensessional_onsite" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">// getting super tax rates with effective dates for patient seen sessional and for haematologist oncall and onsite
+
+var response = JSON.parse(prev.getResponseDataAsString())
+var data = response[&quot;data&quot;];
+
+
+var effectivedates = []
+var superTaxRates = []
+var effectivedatesSessional = []
+var superTaxRatesSessional = []
+
+
+for(var i = 0; i&lt;data.length; i++){
+
+
+var sup = data[i].tax_name
+
+var tax_name = sup.toLowerCase()
+
+ 
+  if(data[i].sub_servicename == &quot;Med Roster&quot; &amp;&amp; tax_name == &quot;super&quot; || tax_name == &quot;Superannuation&quot; || tax_name == &quot;superannuation&quot;&amp;&amp; data[i].invoicing_service == 1)   {
+
+  	
+  	
+  	effectivedates.push(data[i].display_effective_date)
+  	superTaxRates.push(data[i].tax_rate)
+  }   
+	
+}
+
+
+vars.put(&quot;effectivedates&quot;,effectivedates);
+vars.put(&quot;superTaxRates&quot;,superTaxRates);
+
+
+
+log.info(&quot;superTaxRate effectivedates is....&quot;+effectivedates)
+log.info(&quot;superTaxRates is....&quot;+superTaxRates)
+
+
+
+</stringProp>
+                  <stringProp name="TestPlan.comments">// tax_settings sampler getting super, gst, nsw, cpi tax rates with effective dates in response</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="get_superannuation_rule" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;page_num&quot;:0,&quot;page_limit&quot;:100,&quot;total_records&quot;:&quot;0&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/settings/superannuation_rules/paging</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="super_eligible_in_meetings and teachings" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString());
+var data = response.data || [];
+
+var sup_eligible_role = [];
+
+for (var i = 0; i &lt; data.length; i++) {
+
+    var role = data[i];
+
+    // Only Med Roster exists for this hospital
+    if (role.sub_servicename !== &quot;Med Roster&quot;) {
+        continue;
+    }
+
+    // If super_allowed has components → SUPER eligible
+    if (role.super_allowed &amp;&amp; role.super_allowed.length &gt; 0) {
+
+        if (sup_eligible_role.indexOf(role.role_name) === -1) {
+            sup_eligible_role.push(role.role_name);
+        }
+    }
+}
+
+// Store as CSV for reuse
+vars.put(&quot;sup_eligible_role&quot;, sup_eligible_role.join(&quot;,&quot;));
+
+//log.info(&quot;sup_eligible_role is&quot;+sup_eligible_role)
+
+log.info(&quot;Super Eligible Roles (Med Roster): &quot; + sup_eligible_role.join(&quot;,&quot;));
+</stringProp>
+                  <stringProp name="TestPlan.comments">//http sampler getting roles which are eligible for super in meetings and teachings</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generate/not_generated_invoices" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;inv_gen_priority_id&quot;:28,&quot;invoice_start_date&quot;:&quot;2025-12-22&quot;,&quot;is_ac&quot;:1,&quot;role_id&quot;:[40]}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/generate/not_generated_invoices</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="shift_rates_setting/paging" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:112,&quot;rate_id&quot;:&quot;&quot;,&quot;sid&quot;:45,&quot;sesuid&quot;:0,&quot;role_id&quot;:0,&quot;dept_id&quot;:0,&quot;ward_id&quot;:0,&quot;job_cat_id&quot;:0,&quot;duty_type&quot;:0,&quot;duty_type_name&quot;:&quot;&quot;,&quot;rate_type&quot;:0,&quot;effective_date&quot;:&quot;2026-01-03&quot;,&quot;comments&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;day_definition&quot;:0,&quot;shift_overwrite_rate&quot;:0,&quot;rates_flag&quot;:0,&quot;filter_type&quot;:1,&quot;sel_eff_date&quot;:&quot;2026-01-03&quot;,&quot;excell_data&quot;:1,&quot;page_num&quot;:&quot;0&quot;,&quot;page_limit&quot;:10,&quot;total_records&quot;:&quot;0&quot;}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/settings/shift_rates_setting/paging</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="getting-rates" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString());
+var ratesAPIOBJ = response[&quot;data&quot;];
+
+// ✅ convert object → string before storing in vars
+vars.put(&quot;ratesAPIOBJ&quot;, JSON.stringify(ratesAPIOBJ));
+
+//log.info(&quot;ratesAPIOBJ is.. &quot; + JSON.stringify(ratesAPIOBJ));
+
+</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="getInvoiceRuleRoles" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;sesuid&quot;:[19],&quot;memberid&quot;:&quot;sc15f06ae4a74f3d&quot;,&quot;inv_gen_priority_id&quot;:29}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/common/getInvoiceRuleRoles</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="getting_user_role_and role_id" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">//*******getting user roles and role ids
+//************* for eg:: Anasthetist role id :: 50
+var response = JSON.parse(prev.getResponseDataAsString())
+var data = response[&quot;data&quot;]
+var jobRoles = data.length;
+var role_name = [];
+var role_id = [];
+
+
+//Aneasthetist------&gt; rolecode:::50
+
+for(var i = 0; i &lt; jobRoles; i++)
+{
+	role_id.push(data[i].role_id);
+	role_name.push(data[i].role_name);
+}
+
+vars.put(&quot;role_id&quot;,role_id)
+vars.put(&quot;role_name&quot;,role_name)
+
+//log.info(&quot;role_id is&quot; +role_id)
+
+//log.info(&quot;role_name is&quot; +role_name)
+</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generated_invoices" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value"> {&quot;hid&quot;:106,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:29,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;2026-03-09&quot;,&quot;invoice_end_date&quot;:&quot;2026-03-22&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2026-03-09&quot;,&quot;end_date&quot;:&quot;2026-03-22&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:106,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain"></stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">modpay-node/mm/generate/generated_invoices</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">//getting number of generated invoices for the given paycycle month
+
+var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+var counter = data.length;
+var invoiceIds = [];
+var displayInvoiceNums = [];
+
+for( i = 0; i &lt; data.length; i++) {
+	
+    var invoiceId = data[i]._id;
+    invoiceIds.push(invoiceId);
+    var display_invoice_no=data[i].display_invoice_no;
+    displayInvoiceNums.push(display_invoice_no);
+}
+
+vars.put(&quot;counter&quot;,counter);
+log.info(&quot;number of generated invoices---&quot; +counter);
+//log.info(invoiceIds);
+//log.info(displayInvoiceNums);</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
+              <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+                <boolProp name="LoopController.continue_forever">true</boolProp>
+                <stringProp name="LoopController.loops">${counter}</stringProp>
+              </LoopController>
+              <hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generated_invoices" enabled="true">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value"> {&quot;hid&quot;:106,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:29,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;2026-03-09&quot;,&quot;invoice_end_date&quot;:&quot;2026-03-22&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2026-03-09&quot;,&quot;end_date&quot;:&quot;2026-03-22&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:106,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">modpay-node/mm/generate/generated_invoices</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                    <stringProp name="JSONPostProcessor.referenceNames">INVOICE_ID;MEMBER_ID</stringProp>
+                    <stringProp name="JSONPostProcessor.jsonPathExprs">$.data[${inc}]._id;$.data[${inc}].memberid</stringProp>
+                    <stringProp name="JSONPostProcessor.match_numbers">0;0</stringProp>
+                    <stringProp name="JSONPostProcessor.defaultValues">NO_INVOICE_ID;NO_MEMBER_ID;</stringProp>
+                  </JSONPostProcessor>
+                  <hashTree/>
+                </hashTree>
+                <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                  <stringProp name="CounterConfig.start">0</stringProp>
+                  <stringProp name="CounterConfig.end">${counter}</stringProp>
+                  <stringProp name="CounterConfig.incr">1</stringProp>
+                  <stringProp name="CounterConfig.name">inc</stringProp>
+                  <stringProp name="CounterConfig.format"></stringProp>
+                  <boolProp name="CounterConfig.per_user">false</boolProp>
+                </CounterConfig>
+                <hashTree/>
+                <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+                  <stringProp name="BeanShellSampler.query">var invoiceId = vars.get(&quot;INVOICE_ID&quot;);
+vars.put(&quot;invoiceId&quot;,invoiceId);
+//log.info(&quot;display invoice id is &quot; +invoiceId);
+var memberId = vars.get(&quot;MEMBER_ID&quot;);
+vars.put(&quot;memberId&quot;,memberId);
+//log.info(&quot;display member id is &quot; +memberId);</stringProp>
+                  <stringProp name="BeanShellSampler.filename"></stringProp>
+                  <stringProp name="BeanShellSampler.parameters"></stringProp>
+                  <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+                </BeanShellSampler>
+                <hashTree/>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="invoice/invoiceprofile_details" enabled="true">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">{&quot;hid&quot;:106,&quot;memberid&quot;:&quot;${memberId}&quot;}&#xd;
+&#xd;
+</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">modpay-node/mm/invoice/invoiceprofile_details</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">// getting user invoice profile details SUPER eligible or not ... GST registered or not 
+
+var response=JSON.parse(prev.getResponseDataAsString())
+var data = response[&quot;data&quot;]
+//data = JSON.stringify(data)
+
+//log.info(&quot;data is....&quot;+data)
+var super_annuation = data.super_annuation;
+vars.put(&quot;super_annuation&quot;,super_annuation)
+var super_annuation_entitytypecode = data.super_annuation_entitytypecode;
+vars.put(&quot;super_annuation_entitytypecode&quot;,super_annuation_entitytypecode)
+log.info(&quot;super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;&quot;+super_annuation_entitytypecode)
+var gst = data.gst;
+vars.put(&quot;gst&quot;,gst);
+log.info(&quot;gst is....&quot;+gst)
+var userName = data.name;
+vars.put(&quot;userName&quot;,userName)
+log.info(&quot;userName is;;;;;;;;;;;;;;;;;;;;;;;&quot;+userName)
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                </hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="shiftinformation" enabled="true">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">{&#xd;
+  &quot;invoice_id&quot;: &quot;${invoiceId}&quot;,&#xd;
+  &quot;hid&quot;: 106,&#xd;
+  &quot;decimalCalObj&quot;: {&#xd;
+    &quot;hid&quot;: 106,&#xd;
+    &quot;isRoundOff&quot;: 1,&#xd;
+    &quot;decimalCnt&quot;: 2,&#xd;
+    &quot;displayDecimalCnt&quot;: 2,&#xd;
+    &quot;display_sign_off&quot;: 1&#xd;
+  }&#xd;
+}&#xd;
+&#xd;
+</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">modpay-node/mm/invoice/view_invoice</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor-wpth" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString())
+var data = response[&quot;data&quot;]
+
+//getting start date and end date from getgeneratedInvData service
+
+var startDate = data.invoice_start_date
+vars.put(&quot;startDate&quot;,startDate);
+//log.info(startDate)
+var endDate = data.invoice_end_date
+vars.put(&quot;endDate&quot;,endDate);
+startDate = startDate.split(&quot;-&quot;);
+endDate = endDate.split(&quot;-&quot;);
+//2023-03-13
+//01/07/2021
+
+var from = new Date(startDate[0], parseInt(startDate[1])-1, startDate[2]);  // -1 because months are from 0 to 11
+var to   = new Date(endDate[0], parseInt(endDate[1])-1, endDate[2]);//getting time in IST formate
+var fromdate_time = from.getTime()
+
+
+
+
+//getting tax rates and effective dates from invoice tax_settings service 
+
+
+var effective_dates = vars.get(&quot;effectivedates&quot;).split(&quot;,&quot;);
+var sup_tax_rates = vars.get(&quot;superTaxRates&quot;).split(&quot;,&quot;);
+
+
+
+
+//********************setting dates and super tax rates as key value pair
+var myObject = {};
+var hocObject = {};
+var hssObject = {};
+
+
+for(var i = 0; i &lt; effective_dates.length ; i++)
+{ 
+
+	myObject[effective_dates[i]] = sup_tax_rates[i]
+}
+
+
+//log.info(&quot;myObject is&quot; +JSON.stringify(myObject))
+
+//o/p---&gt;{&quot;01/10/2018&quot;:&quot;9.5&quot;,&quot;01/12/2019&quot;:&quot;9.5&quot;,&quot;01/07/2021&quot;:&quot;10&quot;,&quot;01/07/2022&quot;:&quot;10.5&quot;,&quot;27/03/2020&quot;:&quot;9.5&quot;}
+
+
+// ************* function to remove duplicate elements*****************
+ 
+    function removeDuplicates(effective_dates) {
+        var unique = [];
+        for(i=0; i &lt; effective_dates.length; i++){ 
+            if(unique.indexOf(effective_dates[i]) === -1) { 
+                unique.push(effective_dates[i]); 
+            } 
+        }
+        return unique;
+    }
+ 
+effective_dates = removeDuplicates(effective_dates);
+//log.info(&quot;effective dates without duplication&quot;+effective_dates);
+
+
+
+
+
+
+//fromdate_time
+var effective_date_time = []
+
+
+function getTime(fromDate)
+{
+var dates  = [] 
+var effective_time = []
+for(var index =0; index &lt; fromDate.length ; index++){
+
+var element = fromDate[index];
+   var parts = element.split(&quot;/&quot;);
+   var date= new Date(parts[2], parseInt(parts[1]) - 1, parts[0]);
+   dates.push(date);
+   effective_time.push(dates[index].getTime())
+}
+return effective_time
+}
+
+effective_date_time  = getTime(effective_dates)
+
+
+//log.info(&quot;without ascending order&quot;+effective_date_time)
+//log.info(&quot;without hoc_ascending order^^^^^^^^^^^^^^^^^&quot;+hoc_effective_date_time)
+//log.info(&quot;without hss_ascending order&quot;+hss_effective_date_time)
+
+//o/p---&gt;1538332200000,1575138600000,1625077800000,1656613800000,1585247400000
+//log.info(effective_date_time[0])
+
+
+
+
+
+
+//*********************copying effective_date_time to sdate
+var sdate = []
+
+function pushArray(arr, arr2) {
+ return arr.push.apply(arr, arr2);
+ 
+}
+var sodate = pushArray(sdate, effective_date_time);
+
+//log.info(&quot;shocdate ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&quot;+shocdate)
+//log.info(&quot;sodate&quot;+sodate)
+//o/p---&gt; 5
+
+
+
+//********* arranging dates in ascending order
+
+function bubbleSort(effective_date_time) {
+  var done = false;
+  while (!done) {
+    done = true;
+    for (var i = 1; i &lt; effective_date_time.length; i += 1) {
+      if (effective_date_time[i - 1] &lt; effective_date_time[i]) {
+        done = false;
+        var tmp = effective_date_time[i - 1];
+        effective_date_time[i - 1] = effective_date_time[i];
+        effective_date_time[i] = tmp;
+      }
+    }
+  }
+
+  return effective_date_time;
+}
+
+var sorted_dates = bubbleSort(effective_date_time)
+//log.info(&quot;dates in order is &quot; +sorted_dates)
+
+
+//o/p-----&gt;1656613800000,1625077800000,1585247400000,1575138600000,1538332200000
+
+
+//*********************compare super patient seen effective dates
+var flag = 0;
+var super_tax_rate;
+for (var index = 0 ; index &lt;  sorted_dates.length; index++) {
+   
+   
+    if ((fromdate_time &gt; sorted_dates[index] || fromdate_time === sorted_dates[index]) &amp;&amp; flag === 0) {
+
+          flag = 1
+    	     for (var i = 0; i &lt; effective_date_time.length; i++)
+    	     {
+    	 	if(sdate[i] === sorted_dates[index])
+          {
+          	
+    	 	super_tax_rate = myObject[effective_dates[i]]
+    	 	
+        }
+}
+
+}
+
+}
+vars.put(&quot;super_tax_rate&quot;,super_tax_rate);
+log.info(&quot;super tax rate is&quot;+super_tax_rate)
+
+
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+
+var invoice_summary = data.invoice_summary
+var act_billing_total = invoice_summary.billing_total
+vars.put(&quot;act_billing_total&quot;,act_billing_total)
+
+var act_super_annonation = invoice_summary.super_annonation
+vars.put(&quot;act_super_annonation&quot;,act_super_annonation)
+//log.info(&quot;act_super_annonation is...&quot;+act_super_annonation)
+var act_gst_total = invoice_summary.gst_total
+vars.put(&quot;act_gst_total&quot;,act_gst_total)
+//log.info(&quot;act_gst_total is...&quot;+act_gst_total)
+var act_inv_total = invoice_summary.inv_total
+vars.put(&quot;act_inv_total&quot;,act_inv_total)
+//log.info(&quot;act_inv_total is...&quot;+act_inv_total)
+var discount_percentage = data.discount_percentage
+vars.put(&quot;discount_percentage&quot;,discount_percentage)
+//log.info(&quot;discount_percentage is...&quot;+discount_percentage)
+var credit_invoice = data.credit_note_invoice_id
+var is_credit_note = false
+var invoice_period = data.invoice_period
+vars.put(&quot;invoice_period&quot;,invoice_period)
+//log.info(&quot;invoice_period is.....&quot; +invoice_period)
+var display_invoice_no = data.display_invoice_no
+vars.put(&quot;display_invoice_no&quot;,display_invoice_no)
+//log.info(&quot;invoice_period is...&quot;+invoice_period)
+var noOfHours = data.display_total_hrs  
+vars.put(&quot;noOfHours&quot;,noOfHours)
+
+if(credit_invoice &gt; 0)
+{
+	is_credit_note = true
+}
+vars.put(&quot;is_credit_note&quot;,is_credit_note)
+
+//log.info(&quot;credit note is&quot; +is_credit_note)
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                </hashTree>
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="shiftinformation-${invoiceId}" enabled="true">
+                  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                    <collectionProp name="Arguments.arguments">
+                      <elementProp name="" elementType="HTTPArgument">
+                        <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                        <stringProp name="Argument.value">{&#xd;
+  &quot;invoice_id&quot;: &quot;${invoiceId}&quot;,&#xd;
+  &quot;hid&quot;: 106,&#xd;
+  &quot;decimalCalObj&quot;: {&#xd;
+    &quot;hid&quot;: 106,&#xd;
+    &quot;isRoundOff&quot;: 1,&#xd;
+    &quot;decimalCnt&quot;: 2,&#xd;
+    &quot;displayDecimalCnt&quot;: 2,&#xd;
+    &quot;display_sign_off&quot;: 1&#xd;
+  }&#xd;
+}</stringProp>
+                        <stringProp name="Argument.metadata">=</stringProp>
+                      </elementProp>
+                    </collectionProp>
+                  </elementProp>
+                  <stringProp name="HTTPSampler.domain"></stringProp>
+                  <stringProp name="HTTPSampler.port"></stringProp>
+                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                  <stringProp name="HTTPSampler.path">modpay-node/mm/invoice/view_invoice</stringProp>
+                  <stringProp name="HTTPSampler.method">POST</stringProp>
+                  <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                  <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                  <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                  <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                  <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                  <stringProp name="HTTPSampler.response_timeout"></stringProp>
+                </HTTPSamplerProxy>
+                <hashTree>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">/*************************************************************
+ *  ONSITE CALCULATION – MED ROSTER
+ *  SUPER : EXTRACTED LOGIC (Payroll style)
+ *  Environment : JMeter – JSR223 (JavaScript)
+ *************************************************************/
+
+// ---------- Parse response ----------
+var response = JSON.parse(prev.getResponseDataAsString());
+var data = response.data || {};
+var shifts = data.invoice_generation_shifts || [];
+var shiftCount = shifts.length;
+
+log.info(&quot;---------- ONSITE CALCULATION START ----------&quot;);
+log.info(&quot;Number of Med roster shifts: &quot; + shiftCount);
+
+// ---------- Common variables ----------
+var totalAmount = 0;
+var totSplitAmt = 0;
+var totSplitAmtExcludePvt = 0;
+
+var actualGST = 0;
+var actualSUPER = 0;
+var SA = 0;
+
+var displayShiftAmt = 0;
+var displayGST = 0;
+var displaySUPER = 0;
+var displayTotal = 0;
+
+var gst = Number(vars.get(&quot;gst&quot;));
+var super_tax_rate = Number(vars.get(&quot;super_tax_rate&quot;));
+var super_annuation_entitytypecode = vars.get(&quot;super_annuation_entitytypecode&quot;);
+
+log.info(&quot;super_annuation_entitytypecode = &quot; + super_annuation_entitytypecode);
+
+// ---------- Helpers ----------
+function splitByBrOrNewLine(value) {
+    if (!value) return [];
+    value = String(value);
+    return value.indexOf(&quot;&lt;br&gt;&quot;) !== -1 ? value.split(&quot;&lt;br&gt;&quot;) : value.split(&quot;\n&quot;);
+}
+
+function isMedRoster(sub, ward) {
+    return sub === &quot;Med Roster&quot; &amp;&amp; ward === &quot;GENERAL WARDS&quot;;
+}
+
+// ************************************************************
+//                    HOLIDAY CHECK
+// ************************************************************
+var holidayNames = JSON.parse(vars.get(&quot;holidayNames&quot;));
+var holidayDates = JSON.parse(vars.get(&quot;holidayDates&quot;));
+var invoiceHolidayComments = &quot;&quot;;
+var holidayRate = 0;
+var holidayRateFound = false;
+
+
+for (var h = 0; h &lt; shiftCount; h++) {
+
+    var shift = shifts[h];
+    var shiftStart = shift.shift_start_date;
+    var idx = holidayDates.indexOf(shiftStart);
+
+    if (idx !== -1) {
+
+        invoiceHolidayComments +=
+            &quot;Shift on &quot; + shiftStart + &quot; is Holiday: &quot; + holidayNames[idx] + &quot;. &quot;;
+
+        log.info(&quot;HOLIDAY FOUND: &quot; + shiftStart + &quot; → &quot; + holidayNames[idx]);
+
+        // ---- EXTRACT HOLIDAY RATE ----
+        var rates = splitByBrOrNewLine(shift.display_applied_rate);
+
+        for (var r = 0; r &lt; rates.length; r++) {
+            var rate = Number(rates[r]);
+            if (rate &gt; holidayRate) {
+                holidayRate = rate;   // keep highest holiday rate
+                holidayRateFound = true;
+            }
+        }
+        log.info(&quot;HOLIDAY RATE APPLIED: &quot; + holidayRate);
+    }
+}
+
+
+if (holidayRateFound) {
+    vars.put(&quot;holidayRate&quot;, holidayRate);
+} else {
+    vars.put(&quot;holidayRate&quot;, &quot;&quot;); // no holiday
+}
+
+vars.put(&quot;invoiceHolidayComments&quot;, invoiceHolidayComments);
+
+// ************************************************************
+//                    MAIN LOOP
+// ************************************************************
+for (var i = 0; i &lt; shiftCount; i++) {
+
+    var shift = shifts[i];
+    if (!isMedRoster(shift.sub_service_name, shift.ward_name)) continue;
+
+    // Display amounts
+    displayShiftAmt += shift.shift_amt_wo_gst;
+    displayGST += Number(shift.display_total_shift_gst_amt || 0);
+    displaySUPER += Number(shift.super_amt || 0);
+    displayTotal += shift.total_shift_amt;
+
+    var timings = splitByBrOrNewLine(shift.display_shift_timings);
+    var rates = splitByBrOrNewLine(shift.display_applied_rate);
+
+    var splitCount = timings.length;
+    var totalHours = shift.total_hrs / 60;
+    var pvtHours = Number(shift.pvt_hrs);
+
+    // ---- Rate ZERO check ----
+    for (var r = 0; r &lt; rates.length; r++) {
+        if (Number(rates[r]) === 0) {
+            vars.put(
+                &quot;onsiteRateZeroComment&quot;,
+                &quot;Rate became ZERO for split &quot; + (r + 1) + &quot; - Please check manually.&quot;
+            );
+        }
+    }
+
+    // ---- Split + No Pvt ----
+    if (splitCount &gt; 1 &amp;&amp; pvtHours === 0) {
+
+        for (var j = 0; j &lt; splitCount; j++) {
+            var t = timings[j].split(&quot; - &quot;);
+            var f = t[0].split(&quot;:&quot;);
+            var to = t[1].split(&quot;:&quot;);
+
+            var fromMin = (+f[0] * 60) + +f[1];
+            var toMin = (+to[0] * 60) + +to[1];
+
+            var hrs = Math.abs(toMin - fromMin) / 60;
+            var amt = hrs * Number(rates[j]);
+
+            totSplitAmt += amt;
+        }
+    }
+    // ---- Split + Pvt ----
+    else if (splitCount &gt; 1 &amp;&amp; pvtHours !== 0) {
+        totSplitAmtExcludePvt += Number(rates[0]) * totalHours;
+    }
+    // ---- Single shift ----
+    else {
+        totalAmount += Number(shift.display_applied_rate) * totalHours;
+    }
+}
+
+// ************************************************************
+//                    BASE AMOUNT
+// ************************************************************
+var preGSTAmount = totSplitAmt + totSplitAmtExcludePvt + totalAmount;
+var gstAmount = preGSTAmount;   // IMPORTANT: base for SUPER &amp; GST
+
+// ************************************************************
+//                    SUPER (EXTRACTED)
+// ************************************************************
+if (super_annuation_entitytypecode === &quot;IND&quot;) {
+
+    var sa_rate = (100 + super_tax_rate) / 100;
+    actualSUPER = gstAmount - (gstAmount / sa_rate);
+    SA = actualSUPER;
+
+    //log.info(&quot;Extracted SUPER amount = &quot; + actualSUPER);
+} else {
+    actualSUPER = 0;
+    SA = 0;
+}
+
+//************************************************************
+//                    GST (EXCLUDING SUPER)
+// ************************************************************
+if (gst === 1) {
+    var gstBase = gstAmount - actualSUPER;
+    actualGST = (gstBase * 10) / 100;
+    //log.info(&quot;GST calculated on base = &quot; + gstBase);
+} else {
+    actualGST = 0;
+}
+
+// ************************************************************
+//                    FINAL TOTALS
+// ************************************************************
+var onsiteTotal = preGSTAmount;
+
+//total invoice only shift calculations
+vars.put(&quot;onsiteTotal&quot;, onsiteTotal);
+
+var onsiteInvoiceTotal = onsiteTotal + actualGST - actualSUPER;
+
+
+
+// ************************************************************
+//                    VALIDATION
+// ************************************************************
+var shiftDiff = Math.abs(onsiteTotal - displayShiftAmt);
+var gstDiff = Math.abs(displayGST - actualGST);
+var superDiff = Math.abs(displaySUPER - actualSUPER);
+var invoiceDiff = Math.abs(displayTotal - onsiteInvoiceTotal);
+
+
+// ************************************************************
+//                    VALIDATION
+// ************************************************************
+var shiftDiff = Math.abs(onsiteTotal - displayShiftAmt);
+var gstDiff = Math.abs(displayGST - actualGST);
+var superDiff = Math.abs(displaySUPER - actualSUPER);
+var invoiceDiff = Math.abs(displayTotal - onsiteInvoiceTotal);
+
+var errorFlag = &quot;FALSE&quot;;
+var errorReason = &quot;&quot;;
+
+if (shiftDiff &gt; 0.8) {
+    errorFlag = &quot;TRUE&quot;;
+    errorReason = &quot;Shift Amount Mismatch&quot;;
+} else if (gstDiff &gt; 0.8) {
+    errorFlag = &quot;TRUE&quot;;
+    errorReason = &quot;GST Mismatch&quot;;
+} else if (superDiff &gt; 0.8) {
+    errorFlag = &quot;TRUE&quot;;
+    errorReason = &quot;SUPER Mismatch&quot;;
+} else if (invoiceDiff &gt; 0.8) {
+    errorFlag = &quot;TRUE&quot;;
+    errorReason = &quot;Invoice Total Mismatch&quot;;
+}
+
+//vars.put(&quot;onsiteErrorFlag&quot;, errorFlag);
+//vars.put(&quot;onsiteErrorReason&quot;, errorReason);
+
+//log.info(&quot;onsiteErrorFlag = &quot; + errorFlag);
+//log.info(&quot;onsiteErrorReason = &quot; + errorReason);
+//log.info(&quot;---------- ONSITE CALCULATION END ----------&quot;);
+
+
+var total_Onsite_shiftAmount = onsiteTotal;
+
+var onsiteBillingTotal = onsiteTotal;
+vars.put(&quot;onsiteBillingTotal&quot;,onsiteBillingTotal)
+
+//log.info(&quot;onsiteBillingTotal is..&quot;+onsiteBillingTotal)
+
+var onsiteSubTotal = onsiteBillingTotal - actualSUPER;
+vars.put(&quot;onsiteSubTotal&quot;,onsiteSubTotal)
+
+//log.info(&quot;onsiteSubTotal is..&quot;+onsiteSubTotal)
+
+vars.put(&quot;actualSUPER&quot;, actualSUPER);
+vars.put(&quot;onsiteGST&quot;, actualGST);
+
+vars.put(&quot;onsiteInvoiceTotal&quot;, onsiteInvoiceTotal);
+
+//log.info(&quot;onsiteInvoiceTotal is..&quot;+onsiteInvoiceTotal)
+
+
+
+
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="modifications-chatgpt-super included" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">// --- Parse Response ---
+var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+
+var mods = data.invoice_modifications || [];
+var count = mods.length;
+
+var gst = Number(vars.get(&quot;gst&quot;));   // 1 or 0
+
+// ---------------- TOTALS ----------------
+var totalModAmount = 0;   // base amount
+var totalModGST = 0;      // GST
+var totalModSA = 0;       // SUPER (from API)
+
+// ---------------- COMMENTS ----------------
+var anyModComments = &quot;NO&quot;;
+var mod_comments = &quot;&quot;;
+
+log.info(&quot;Total Modification Records: &quot; + count);
+
+// ---------------- LOOP ----------------
+for (var i = 0; i &lt; count; i++) {
+
+    var mod = mods[i];
+    var type = mod.type_id;
+
+    var amount = Number(mod.original_amount) || 0;
+    var superAmt = Number(mod.superannuation) || 0;
+
+    var gstValue = 0;
+
+    // ----- Capture comments -----
+    if (mod.approve_comments &amp;&amp; mod.approve_comments.trim() !== &quot;&quot;) {
+        anyModComments = &quot;TRUE&quot;;
+        mod_comments += mod.approve_comments + &quot; | &quot;;
+    }
+
+    // ==================================================
+    // TYPE 8 → MINUS
+    // ==================================================
+    if (type === 8) {
+
+        var amount_minus = -amount;
+        var super_minus = -superAmt;
+
+        if (gst === 1) {
+            gstValue = (amount_minus + super_minus) * 10 / 100;
+        }
+
+        totalModAmount += amount_minus;
+        totalModSA += super_minus;
+        totalModGST += gstValue;
+
+        log.info(&quot;[MINUS] amount=&quot; + amount_minus +
+                 &quot; super=&quot; + super_minus +
+                 &quot; gst=&quot; + gstValue);
+    }
+
+    // ==================================================
+    // TYPE 7 → PLUS
+    // ==================================================
+    else if (type === 7) {
+
+        var amount_plus = amount;
+        var super_plus = superAmt;
+
+        if (gst === 1) {
+            gstValue = (amount_plus - super_plus) * 10 / 100;
+        }
+
+        totalModAmount += amount_plus;
+        totalModSA += super_plus;
+        totalModGST += gstValue;
+
+        log.info(&quot;[PLUS] amount=&quot; + amount_plus +
+                 &quot; super=&quot; + super_plus +
+                 &quot; gst=&quot; + gstValue);
+    }
+
+    // ==================================================
+    // OTHER TYPES
+    // ==================================================
+    else {
+        log.info(&quot;No modification logic for type: &quot; + type);
+    }
+}
+
+// ---------------- FINAL TOTALS ----------------
+var modBillingTotal = totalModAmount;
+var invTotalModification = totalModAmount - totalModSA + totalModGST;
+
+// ---------------- STORE VARS ----------------
+vars.put(&quot;tot_modification_amount&quot;, totalModAmount);
+vars.put(&quot;modification_SA&quot;, totalModSA);
+vars.put(&quot;modification_gst&quot;, totalModGST);
+vars.put(&quot;mod_billing_tot&quot;, modBillingTotal);
+vars.put(&quot;inv_tot_modification&quot;, invTotalModification);
+vars.put(&quot;anyModComments&quot;, anyModComments);
+vars.put(&quot;mod_comments&quot;, mod_comments);
+
+
+//log.info(&quot;Any Comments      : &quot; + anyModComments);
+//log.info(&quot;Comments          : &quot; + mod_comments);
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="discount_invoice-chatgpt-superincluded" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">// --- Parse Response ---
+var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+
+// --- Counts ---
+var dis_shiftinfo         = data.invoice_generation_shifts.length;
+var dis_cov_shifts        = data.invoice_generation_cov_shifts.length;
+var dis_modificationinfo  = data.invoice_modifications.length;
+var dis_allowanceinfo     = data.invoice_allowances.length;
+
+// Store counts
+vars.put(&quot;dis_shiftinfo&quot;, dis_shiftinfo);
+vars.put(&quot;dis_cov_shifts&quot;, dis_cov_shifts);
+vars.put(&quot;dis_modificationinfo&quot;, dis_modificationinfo);
+vars.put(&quot;dis_allowanceinfo&quot;, dis_allowanceinfo);
+
+// --- Discount %
+var only_discount_inv_percentage = Number(data.discount_percentage) || 0;
+vars.put(&quot;only_discount_inv_percentage&quot;, only_discount_inv_percentage);
+
+// --- Display Totals (API values) ---
+var displayDiscountBillingTotal = Number(data.billing_total) || 0;
+var displayDiscountGSTTotal     = Number(data.gst_total) || 0;
+var displayDiscountInvoiceTotal = Number(data.inv_total) || 0;
+var displayDiscountSuperTotal   = Number(data.super_annonation) || 0;
+
+// --- Final Calculated Totals ---
+var discount_billing_total = 0;
+var discount_gst_total     = 0;
+var discount_invoice_total = 0;
+var discount_super_total   = 0;
+
+// ------------------------------------------------------------
+// ✅ ONLY DISCOUNT EXISTS CONDITION (same as old code intent)
+// ------------------------------------------------------------
+if (
+    dis_shiftinfo === 0 &amp;&amp;
+    dis_modificationinfo === 0 &amp;&amp;
+    dis_allowanceinfo === 0 &amp;&amp;
+    only_discount_inv_percentage !== 0
+) {
+
+    log.info(&quot;Only discount exists&quot;);
+
+    // Remaining percentage
+    var remainingPercentage = Math.abs(100 - only_discount_inv_percentage);
+
+    // --- Apply discount ---
+   var remainingPercentage = 100 - only_discount_inv_percentage;
+
+    // --- Billing ---
+    discount_billing_total = displayDiscountBillingTotal * (remainingPercentage / 100);
+
+    // --- GST ---
+    discount_gst_total = displayDiscountGSTTotal * (remainingPercentage / 100);
+
+    // --- Invoice Total ---
+    discount_invoice_total = displayDiscountInvoiceTotal * (remainingPercentage / 100);
+    
+    discount_super_total   = displayDiscountSuperTotal * (remainingPercentage / 100);
+    
+}
+
+// --- Store Results ---
+vars.put(&quot;discount_billing_total&quot;, discount_billing_total);
+vars.put(&quot;discount_gst_total&quot;, discount_gst_total);
+vars.put(&quot;discount_super_total&quot;, discount_super_total);
+vars.put(&quot;discount_invoice_total&quot;, discount_invoice_total);
+
+
+//log.info(&quot;Super After Disc   : &quot; + discount_super_total);
+//log.info(&quot;Invoice After Disc : &quot; + discount_invoice_total);
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                  <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="final_billing_total - super included" enabled="true">
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="cacheKey">true</stringProp>
+                    <stringProp name="script">// Parse response
+var response = JSON.parse(prev.getResponseDataAsString());
+var data = response[&quot;data&quot;];
+
+// Display totals from API
+var displaydiscount_billing_total = Number(data.billing_total);
+var displaydiscount_gst_total = Number(data.gst_total);
+var displaydiscount_inv_total = Number(data.inv_total);
+var displaydiscount_super_annonation = data.super_annonation
+
+// Counts
+var dis_shiftinfo = Number(vars.get(&quot;dis_shiftinfo&quot;));
+log.info(&quot;dis_shiftinfo&quot;+dis_shiftinfo)
+var dis_cov_shifts = Number(vars.get(&quot;dis_cov_shifts&quot;));
+log.info(&quot;dis_cov_shifts&quot;+dis_cov_shifts)
+var dis_modificationinfo = Number(vars.get(&quot;dis_modificationinfo&quot;));
+log.info(&quot;dis_modificationinfo&quot;+dis_modificationinfo)
+var dis_allowanceinfo = Number(vars.get(&quot;dis_allowanceinfo&quot;));
+log.info(&quot;dis_allowanceinfo&quot;+dis_allowanceinfo)
+var only_discount_inv_percentage = Number(vars.get(&quot;only_discount_inv_percentage&quot;));
+log.info(&quot;only_discount_inv_percentage&quot;+only_discount_inv_percentage)
+
+// Onsite values
+var onsiteBillingTotal = Number(vars.get(&quot;onsiteBillingTotal&quot;));
+//log.info(&quot;onsiteBillingTotal is..&quot;+onsiteBillingTotal)
+var onsiteSubTotal = Number(vars.get(&quot;onsiteSubTotal&quot;));
+//log.info(&quot;onsiteSubTotal is..&quot;+onsiteSubTotal)
+var onsiteGST = Number(vars.get(&quot;onsiteGST&quot;));
+//log.info(&quot;onsiteGST is..&quot;+onsiteGST)
+var actualSUPER = Number(vars.get(&quot;actualSUPER&quot;));
+//log.info(&quot;actualSUPER is..&quot;+actualSUPER)
+var onsiteInvoiceTot = Number(vars.get(&quot;onsiteInvoiceTotal&quot;));
+//log.info(&quot;onsiteInvoiceTot is..&quot;+onsiteInvoiceTot)
+
+
+
+// Allowances
+var tot_allowance = Number(vars.get(&quot;tot_allowance&quot;));
+var allowance_gst = Number(vars.get(&quot;allowance_gst&quot;));
+var inv_tot_allowance = Number(vars.get(&quot;inv_tot_allowance&quot;));
+var allowance_SA = vars.get(&quot;allowance_SA&quot;);
+allowance_SA = Number(allowance_SA)
+
+
+//Modifications
+var tot_modification_amount = Number(vars.get(&quot;tot_modification_amount&quot;));
+log.info(&quot;tot_modification_amount is..&quot;+tot_modification_amount)
+var modification_gst = Number(vars.get(&quot;modification_gst&quot;));
+log.info(&quot;modification_gst is..&quot;+modification_gst)
+var inv_tot_modification = Number(vars.get(&quot;inv_tot_modification&quot;));
+log.info(&quot;inv_tot_modification is..&quot;+inv_tot_modification)
+var modification_SA = vars.get(&quot;modification_SA&quot;);
+modification_SA = Number(modification_SA);
+
+
+// Final expected totals
+var exp_billing_total = 0;
+var exp_sub_total = 0;
+var exp_gst_total = 0;
+var exp_invoice_total = 0;
+var exp_superannuation_total = 0 
+
+
+// Discount percentage
+var discount_percentage = Number(vars.get(&quot;discount_percentage&quot;));
+
+
+// ***************************************************
+// CASE 1: Shifts/mod/allowance exist &amp; NO discount
+
+if ((dis_shiftinfo !== 0 || dis_modificationinfo !== 0 || dis_allowanceinfo !== 0) &amp;&amp;
+    only_discount_inv_percentage === 0)
+{
+	
+    log.info(&quot;shifts/mod/allowance case executed&quot;);
+    exp_billing_total = onsiteBillingTotal + tot_allowance + tot_modification_amount;
+ 
+    exp_sub_total = onsiteSubTotal + tot_allowance + tot_modification_amount;
+    
+    exp_superannuation_total = actualSUPER + allowance_SA + modification_SA
+   
+    exp_gst_total = onsiteGST + allowance_gst + modification_gst;
+ 
+    exp_invoice_total = onsiteInvoiceTot + inv_tot_allowance + inv_tot_modification;
+    
+    
+    
+}
+
+
+// ***************************************************
+// CASE 2: Shifts/mod/allowance exist + discount applied
+// ***************************************************
+else if ((dis_shiftinfo != 0 || dis_modificationinfo != 0 || dis_allowanceinfo != 0) &amp;&amp;
+         only_discount_inv_percentage !== 0)
+{
+    log.info(&quot;Discount + shifts/mod/allowance case executed&quot;);
+
+    var remainingPercentage = 100 - discount_percentage;
+
+    exp_billing_total = (onsiteBillingTotal + tot_allowance) * remainingPercentage / 100;
+    exp_sub_total = (onsiteSubTotal + tot_allowance) * remainingPercentage / 100;
+    exp_gst_total = (onsiteGST + allowance_gst) * remainingPercentage / 100;
+    exp_invoice_total = (onsiteInvoiceTot + inv_tot_allowance) * remainingPercentage / 100;
+    
+}
+
+
+// ***************************************************
+// CASE 3: Only pure discount scenario (no shift/mod/allowances)
+// ***************************************************
+else {
+    log.info(&quot;Only discount block executed&quot;);
+
+    exp_billing_total = Number(vars.get(&quot;discount_billing_total&quot;));
+    
+    exp_gst_total = Number(vars.get(&quot;discount_gst_total&quot;));
+    exp_invoice_total = Number(vars.get(&quot;discount_invoice_total&quot;));
+}
+
+
+// ***************************************************
+// DISCOUNT ERROR CHECKS
+// ***************************************************
+var discountBillingAmountDiff = Math.abs(exp_billing_total - displaydiscount_billing_total);
+var discountGSTAmountDiff = Math.abs(exp_gst_total - displaydiscount_gst_total);
+var discountInvoiceAmountDiff = Math.abs(exp_invoice_total - displaydiscount_inv_total);
+
+var discountErrorFlag = &quot;FALSE&quot;;
+var discountErrorReason = &quot;&quot;;
+
+if (only_discount_inv_percentage !== 0)
+{
+    if (discountBillingAmountDiff &gt; 0.8) {
+        discountErrorFlag = &quot;TRUE&quot;;
+        discountErrorReason = &quot;Discount Billing Amount Mismatch&quot;;
+    }
+    else if (discountGSTAmountDiff &gt; 0.8) {
+        discountErrorFlag = &quot;TRUE&quot;;
+        discountErrorReason = &quot;Discount GST Amount Mismatch&quot;;
+    }
+    else if (discountInvoiceAmountDiff &gt; 0.8) {
+        discountErrorFlag = &quot;TRUE&quot;;
+        discountErrorReason = &quot;Discount Invoice Total Mismatch&quot;;
+    }
+}
+
+vars.put(&quot;discountErrorFlag&quot;, discountErrorFlag);
+vars.put(&quot;discountErrorReason&quot;, discountErrorReason);
+
+
+
+
+// ***************************************************
+// NULL CHECK
+// ***************************************************
+var nullFlag = &quot;FALSE&quot;;
+var nullError = &quot;&quot;;
+
+if (exp_billing_total !== exp_billing_total || exp_invoice_total !== exp_invoice_total)
+{
+    nullFlag = &quot;TRUE&quot;;
+    nullError = &quot;Please check invoice manually&quot;;
+}
+
+vars.put(&quot;nullFlag&quot;, nullFlag);
+vars.put(&quot;nullError&quot;, nullError);
+
+
+// ***************************************************
+// ACTUAL VALUES (from API invoice)
+// ***************************************************
+var act_billing_total = Number(vars.get(&quot;act_billing_total&quot;));
+
+log.info(&quot;act_billing_total is..&quot;+act_billing_total)
+
+var act_gst_total = Number(vars.get(&quot;act_gst_total&quot;));
+log.info(&quot;act_gst_total is..&quot;+act_gst_total)
+var act_inv_total = Number(vars.get(&quot;act_inv_total&quot;));
+log.info(&quot;act_inv_total is..&quot;+act_inv_total)
+var act_super_annonation = vars.get(&quot;act_super_annonation&quot;)
+log.info(&quot;act_super_annonation is..&quot;+act_super_annonation)
+var num = Math.abs(act_inv_total - exp_invoice_total);
+log.info(&quot;num is..&quot;+num)
+
+
+// ***************************************************
+// FINAL ERROR COMBINATION
+// ***************************************************
+var errorReason = &quot;&quot;;
+var onsiteErrorCause = vars.get(&quot;onsiteErrorReason&quot;);
+var discountErrorCause = vars.get(&quot;discountErrorReason&quot;);
+
+if (onsiteErrorCause == &quot;TRUE&quot; || discountErrorFlag == &quot;TRUE&quot; || nullFlag == &quot;TRUE&quot;)
+{
+    errorReason = onsiteErrorCause + &quot;-&quot; + discountErrorCause +&quot;-&quot; +nullError;
+}
+
+errorReason = errorReason.replace(/undefined-/g, &quot; &quot;);
+errorReason = errorReason.replace(/-undefined/g, &quot; &quot;);
+vars.put(&quot;errorReason&quot;, errorReason);
+log.info(&quot;errorReason is..&quot;+errorReason)
+
+
+// ***************************************************
+// FINAL RESULT
+// ***************************************************
+
+var testResult = &quot;PASS&quot;;
+
+if (num &gt; 1 || exp_invoice_total !== exp_invoice_total)
+{
+    testResult = &quot;FAIL&quot;;
+}
+
+
+vars.put(&quot;exp_billing_total&quot;,exp_billing_total)
+vars.put(&quot;exp_sub_total&quot;,exp_sub_total)
+vars.put(&quot;exp_gst_total&quot;,exp_gst_total)
+vars.put(&quot;exp_invoice_total&quot;,exp_invoice_total)
+vars.put(&quot;exp_invoice_total&quot;,exp_invoice_total)
+vars.put(&quot;exp_superannuation_total&quot;,exp_superannuation_total)
+vars.put(&quot;testResult&quot;, testResult);
+log.info(&quot;testResult is..&quot;+testResult)
+
+</stringProp>
+                  </JSR223PostProcessor>
+                  <hashTree/>
+                </hashTree>
+                <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="final_result_File-super included" enabled="true">
+                  <stringProp name="BeanShellSampler.query">import java.io.*;
+
+// --- CSV SAFE WRAPPER ---
+String csv(String v) {
+    if (v == null || v.trim().equals(&quot;&quot;)) v = &quot;-&quot;;
+
+    // Remove newlines
+    v = v.replace(&quot;\n&quot;, &quot; &quot;).replace(&quot;\r&quot;, &quot; &quot;);
+
+    // Replace commas so CSV does not break
+    v = v.replace(&quot;,&quot;, &quot;;&quot;);
+
+    // Escape double quotes
+    v = v.replace(&quot;\&quot;&quot;, &quot;\&quot;\&quot;&quot;);
+
+    // Wrap in quotes always
+    return &quot;\&quot;&quot; + v + &quot;\&quot;&quot;;
+}
+
+// --- FILE PATHS ---
+String passFile = vars.get(&quot;resultFileName1&quot;);
+String failFile = vars.get(&quot;resultFileName2&quot;);
+
+File passDataFile = new File(passFile);
+File failDataFile = new File(failFile);
+
+// --- CREATE PASS HEADER ---
+if (!passDataFile.exists()) {
+    passDataFile.getParentFile().mkdirs();
+    FileOutputStream f = new FileOutputStream(passDataFile, true);
+    PrintStream p = new PrintStream(f);
+    p.println(&quot;invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments,holidayRate&quot;);
+    p.close();
+    f.close();
+}
+
+// --- CREATE FAIL HEADER ---
+if (!failDataFile.exists()) {
+    failDataFile.getParentFile().mkdirs();
+    FileOutputStream f = new FileOutputStream(failDataFile, true);
+    PrintStream p = new PrintStream(f);
+    p.println(&quot;invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,validationError,ModComments,invoiceHolidayComments,holidayRate&quot;);
+
+    p.close();
+    f.close();
+}
+
+// --- READ JMETER VARIABLES ---
+String display_invoice_no  = vars.get(&quot;display_invoice_no&quot;);
+String invoice_period = vars.get(&quot;invoice_period&quot;);
+String userName = vars.get(&quot;userName&quot;);
+String noOfHours = vars.get(&quot;noOfHours&quot;);
+String act_billing_total = vars.get(&quot;act_billing_total&quot;);
+String exp_billing_total = vars.get(&quot;exp_billing_total&quot;);
+String exp_sub_total = vars.get(&quot;exp_sub_total&quot;);
+String act_gst_total = vars.get(&quot;act_gst_total&quot;);
+String exp_gst_total = vars.get(&quot;exp_gst_total&quot;);
+String act_inv_total = vars.get(&quot;act_inv_total&quot;);
+String exp_invoice_total = vars.get(&quot;exp_invoice_total&quot;);
+String testResult = vars.get(&quot;testResult&quot;);
+
+String errorReason = vars.get(&quot;errorReason&quot;);
+String modComments = vars.get(&quot;mod_comments&quot;);
+String holidayRate = vars.get(&quot;holidayRate&quot;);
+
+String holidayComments = vars.get(&quot;invoiceHolidayComments&quot;);
+
+// --- BUILD CSV LINE ---
+StringBuilder line = new StringBuilder();
+
+line.append(csv(display_invoice_no)).append(&quot;,&quot;)
+    .append(csv(invoice_period)).append(&quot;,&quot;)
+    .append(csv(userName)).append(&quot;,&quot;)
+    .append(csv(noOfHours)).append(&quot;,&quot;)
+    .append(csv(act_billing_total)).append(&quot;,&quot;)
+    .append(csv(exp_billing_total)).append(&quot;,&quot;)
+    .append(csv(exp_sub_total)).append(&quot;,&quot;)
+    .append(csv(act_gst_total)).append(&quot;,&quot;)
+    .append(csv(exp_gst_total)).append(&quot;,&quot;)
+    .append(csv(act_inv_total)).append(&quot;,&quot;)
+    .append(csv(exp_invoice_total)).append(&quot;,&quot;)
+    .append(csv(testResult)).append(&quot;,&quot;);
+
+// ---- ADD FAIL-SPECIFIC COLUMN (validationError) ----
+if (!&quot;PASS&quot;.equals(testResult)) {
+    line.append(csv(errorReason)).append(&quot;,&quot;);
+} 
+
+// ---- ADD COMMENTS ----
+line.append(csv(modComments)).append(&quot;,&quot;)
+    .append(csv(holidayComments)).append(&quot;, &quot;).append(csv(holidayRate));
+
+// ---- WRITE TO FILE ----
+FileOutputStream f;
+PrintStream p;
+
+if (&quot;PASS&quot;.equals(testResult)) {
+    f = new FileOutputStream(passDataFile, true);
+    p = new PrintStream(f);
+    p.println(line.toString());
+} else {
+    f = new FileOutputStream(failDataFile, true);
+    p = new PrintStream(f);
+    p.println(line.toString());
+}
+
+p.close();
+f.close();
+</stringProp>
+                  <stringProp name="BeanShellSampler.filename"></stringProp>
+                  <stringProp name="BeanShellSampler.parameters"></stringProp>
+                  <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+                </BeanShellSampler>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="[TG] INVOICE - MASTER" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Create pass/fail result files" enabled="true">
+          <stringProp name="TestPlan.comments">//delete existing result file and creates new result file</stringProp>
+          <stringProp name="BeanShellSampler.query">// Create result file 
+import org.apache.jmeter.services.FileServer;
+
+// Define the report file name
+String fileName1 = &quot;${__TestPlanName}&quot; + &quot;-Pass_Results.csv&quot;; //.replace(&quot;.jmx&quot;,&quot;&quot;)
+String fileName2 = &quot;${__TestPlanName}&quot; + &quot;-Fail_Results.csv&quot;;
+ 
+//get path of current jmeter&apos;s script
+String path = FileServer.getFileServer().getBaseDir();
+ 
+//get the separator
+String separator = File.separator;
+ 
+//log.info(&quot;Path: &quot; + path);
+//log.info(&quot;Path with separator: &quot; + path + separator);
+
+String resultFileName1 = path + &quot;/../result/&quot; + fileName1.replace(&quot;.jmx&quot;,&quot;&quot;);
+String resultFileName2 = path + &quot;/../result/&quot; + fileName2.replace(&quot;.jmx&quot;,&quot;&quot;);
+
+File file1 = new File(resultFileName1);
+File file2 = new File(resultFileName2);
+
+// Delete the file if exist first
+
+if (file1.delete() &amp;&amp; file2.delete()) {
+	
+	log.info(&quot;Files deleted successfully&quot;);
+} else {
+	log.info(&quot;Failed to delete the files&quot;);
+}
+
+
+
+
+
+vars.put(&quot;resultFileName1&quot;, resultFileName1);
+vars.put(&quot;resultFileName2&quot;, resultFileName2);
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="dataInputFiles" enabled="false">
+          <stringProp name="BeanShellSampler.query">import java.io.BufferedReader;
+import java.io.FileReader;
+
+
+//sep rates
+BufferedReader br=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/mbs-item-rates1.json&quot;));
+
+
+
+
+//nov rates
+BufferedReader br1=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/NOV2023.json&quot;));
+
+
+
+//jan-2024 rates
+BufferedReader br2=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/JAN2024.json&quot;));
+
+//march-2024 rates
+BufferedReader br3=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/Mar2024.json&quot;));
+
+//july-2024 rates
+BufferedReader br4=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/Jul2024.json&quot;));
+
+//november 2024 rates
+BufferedReader br5=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/November2024.json&quot;));
+
+
+
+//jan2025 rates
+
+BufferedReader br6=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/Jan2025.json&quot;));
+
+
+
+//Mar2025 rates
+
+BufferedReader br7=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/Mar2025.json&quot;));
+
+//Jul2025 rates
+
+BufferedReader br8=new BufferedReader(new FileReader(&quot;/home/devi/Documents/devi-owner/jmeter/ModPay-Invoice-Generation-Live /ModPay - Invoice-generation-checking-0021-SK/data/Jul2025.json&quot;));
+
+
+
+
+
+
+String line;
+StringBuilder sbuildObj=new StringBuilder();
+StringBuilder sbuildObj1=new StringBuilder();
+StringBuilder sbuildObj2=new StringBuilder();
+StringBuilder sbuildObj3=new StringBuilder();
+StringBuilder sbuildObj4=new StringBuilder();
+StringBuilder sbuildObj5=new StringBuilder();
+StringBuilder sbuildObj6=new StringBuilder();
+StringBuilder sbuildObj7=new StringBuilder();
+StringBuilder sbuildObj8=new StringBuilder();
+
+
+
+
+
+while((line=br.readLine())!=null)
+ {
+	 sbuildObj.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj = sbuildObj.toString();
+vars.put(&quot;jsObj&quot;,jsObj);
+
+
+while((line=br1.readLine())!=null)
+ {
+	 sbuildObj1.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj1 = sbuildObj1.toString();
+vars.put(&quot;jsObj1&quot;,jsObj1);
+
+
+while((line=br2.readLine())!=null)
+ {
+	 sbuildObj2.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj2 = sbuildObj2.toString();
+vars.put(&quot;jsObj2&quot;,jsObj2);
+
+
+while((line=br3.readLine())!=null)
+ {
+	 sbuildObj3.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj3 = sbuildObj3.toString();
+vars.put(&quot;jsObj3&quot;,jsObj3);
+
+
+while((line=br4.readLine())!=null)
+ {
+	 sbuildObj4.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj4 = sbuildObj4.toString();
+vars.put(&quot;jsObj4&quot;,jsObj4);
+
+
+while((line=br5.readLine())!=null)
+ {
+	 sbuildObj5.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj5 = sbuildObj5.toString();
+vars.put(&quot;jsObj5&quot;,jsObj5);
+
+while((line=br6.readLine())!=null)
+ {
+	 sbuildObj6.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj6 = sbuildObj6.toString();
+vars.put(&quot;jsObj6&quot;,jsObj6);
+
+
+while((line=br7.readLine())!=null)
+ {
+	 sbuildObj7.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj7 = sbuildObj7.toString();
+vars.put(&quot;jsObj7&quot;,jsObj7);
+
+while((line=br8.readLine())!=null)
+ {
+	 sbuildObj8.append(line);
+ }
+ //log.info(&quot;original json :: &quot; +sbuildObj.toString());
+var jsObj8 = sbuildObj8.toString();
+vars.put(&quot;jsObj8&quot;,jsObj8);
+
+
+</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-731023175">WPTH invoice reports</stringProp>
+            <stringProp name="1822852621">[TF] Form-One</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

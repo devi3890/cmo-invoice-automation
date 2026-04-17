@@ -1,0 +1,6 @@
+invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments,holidayRate
+"WPH9214R","09/03/2026 - 23/03/2026","Ali BAALBAKI","12:00","1620","1620","1620","162","162","1782","1782","PASS","-","-", "-"
+"WPH9213R","09/03/2026 - 23/03/2026","Christina YANG","36:00","4860","4860","4860","486","486","5346","5346","PASS","-","-", "-"
+"WPH9212R","09/03/2026 - 23/03/2026","Michael LIU","24:00","3240","3240","3240","324","324","3564","3564","PASS","-","-", "-"
+"WPH9211R","09/03/2026 - 23/03/2026","Raj SAMARASINGHE","84:00","11340","11340","10124.999999999998","1012.48","1012.4999999999999","11137.49","11137.499999999998","PASS","-","-", "-"
+"WPH9210R","09/03/2026 - 23/03/2026","Sarangi MUDUGAMUWA HEWAGE","12:00","1620","1620","1446.4285714285713","144.64","144.64285714285714","1591.07","1591.0714285714284","PASS","-","-", "-"

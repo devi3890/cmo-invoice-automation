@@ -1,0 +1,8 @@
+invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
+"NSP1182R","30/03/2026 - 06/04/2026","Aaron HUNG","24:30","2940","2940","2940","294","294","3234","3234","PASS","undefined","-"
+"NSP1181R","30/03/2026 - 06/04/2026","Gaulthier TSHIBINDI","12:00","1800","1800","1800","180","180","1980","1980","PASS","undefined","Shift on 2026-04-05 is Holiday: Easter Sunday. "
+"NSP1180","30/03/2026 - 06/04/2026","Jay TALBOTT","00:30","75","75","75","0","0","75","75","PASS","undefined","-"
+"NSP1179","30/03/2026 - 06/04/2026","Katey LEAL","37:15","4470","4470","4470","0","0","4470","4470","PASS","undefined","Shift on 2026-04-03 is Holiday: Good Friday. Shift on 2026-04-04 is Holiday: Easter Saturday. Shift on 2026-04-05 is Holiday: Easter Sunday. "
+"NSP1178","30/03/2026 - 06/04/2026","Marra AGHAJANI","12:30","1500","1500","1500","0","0","1500","1500","PASS","undefined","-"
+"NSP1177R","30/03/2026 - 06/04/2026","Sarangi MUDUGAMUWA HEWAGE","12:30","1500","1500","1500","150","150","1650","1650","PASS","undefined","Shift on 2026-04-03 is Holiday: Good Friday. "
+"NSP1176R","30/03/2026 - 06/04/2026","Viktor SOKOLOVSKI","25:00","3000","3000","3000","300","300","3300","3300","PASS","undefined","-"

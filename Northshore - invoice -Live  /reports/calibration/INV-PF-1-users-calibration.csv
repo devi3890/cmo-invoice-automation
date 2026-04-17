@@ -1,0 +1,34 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1645085322182,1159,instant_token,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,472,361,1,1,https://www.bjbsoft.com/auth-node/instant_token,1159,0,878
+1645085323349,338,auth-node/login,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,12976,880,1,1,https://www.bjbsoft.com/auth-node/login,338,0,0
+1645085323689,287,loginsettings,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,667,810,1,1,https://www.bjbsoft.com/auth-node/loginsettings,287,0,0
+1645085323977,287,user/ispatient,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,395,820,1,1,https://www.bjbsoft.com/ums-node/user/ispatient,287,0,0
+1645085324265,280,service_auth_token,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,889,420,1,1,https://www.bjbsoft.com/auth-node/service_auth_token,280,0,0
+1645085324546,286,servicesidebarlinks,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1149,837,1,1,https://www.bjbsoft.com/auth-node/servicesidebarlinks,286,0,0
+1645085324833,278,getStorage,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,580,765,1,1,https://www.bjbsoft.com/inv-node/common/getStorage,278,0,0
+1645085325112,278,invoiceprofile_details-1,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1084,808,1,1,https://www.bjbsoft.com/inv-node/invoice/invoiceprofile_details,278,0,0
+1645085325391,1103,dashboard/details/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,38948,799,1,1,https://www.bjbsoft.com/inv-node/rm/dashboard/details/,835,0,0
+1645085326495,278,invoice_subservices,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,715,801,1,1,https://www.bjbsoft.com/inv-node/common/invoice_subservices,278,0,0
+1645085326774,278,paycycle_type,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,542,779,1,1,https://www.bjbsoft.com/inv-node/common/paycycle_type,278,0,0
+1645085327053,327,generated_invoices-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,926,1,1,https://www.bjbsoft.com/inv-node/rm/generate/generated_invoices,327,0,0
+1645085327381,279,invoiceprofile_details-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1084,832,1,1,https://www.bjbsoft.com/inv-node/invoice/invoiceprofile_details,279,0,0
+1645085327661,299,user/eligibility/-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,10069,844,1,1,https://www.bjbsoft.com/inv-node/rm/user/eligibility/,299,0,0
+1645085327962,278,get_shift_rules-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,840,1,1,https://www.bjbsoft.com/inv-node/rm/entry/get_shift_rules,278,0,0
+1645085328241,278,get_timestamp_next_timestamp-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,368,826,1,1,https://www.bjbsoft.com/inv-node/rm/entry/get_timestamp_next_timestamp,278,0,0
+1645085328519,1596,rm/user/details/-current-month,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,52578,958,1,1,https://www.bjbsoft.com/inv-node/rm/user/details/,1326,0,0
+1645085330157,280,get_timestamp_next_timestamp_between_dates,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1973,840,1,1,https://www.bjbsoft.com/inv-node/rm/entry/get_timestamp_next_timestamp_between_dates,280,0,0
+1645085330437,278,/superannuationRules,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,337,909,1,1,https://www.bjbsoft.com/inv-node/rm/rules/superannuationRules,278,0,0
+1645085330716,297,rm/rules/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1509,1009,1,1,https://www.bjbsoft.com/inv-node/rm/rules/,297,0,0
+1645085331014,279,sc_md/sc_get,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,853,1,1,https://www.bjbsoft.com/inv-node/rm/sessional/sc_md/sc_get,279,0,0
+1645085331294,280,/existing_entry_items,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,854,1,1,https://www.bjbsoft.com/inv-node/rm/entry/existing_entry_items,280,0,0
+1645085331575,280,doc_entry_items,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,885,1,1,https://www.bjbsoft.com/inv-node/rm/entry/doc_entry_items,280,0,0
+1645085331855,310,rm/wp/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,1072,1,1,https://www.bjbsoft.com/inv-node/rm/wp/,310,0,0
+1645085332165,280,existing_entry_items-1,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,321,866,1,1,https://www.bjbsoft.com/inv-node/rm/entry/existing_entry_items,280,0,0
+1645085332445,285,/rm/rules/-1,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1509,1009,1,1,https://www.bjbsoft.com/inv-node/rm/rules/,285,0,0
+1645085332731,555,get_admno_mrno_search_details,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1097,910,1,1,https://www.bjbsoft.com/inv-node/generation/entry/get_admno_mrno_search_details,555,0,0
+1645085333314,284,rates/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1098,1022,1,1,https://www.bjbsoft.com/inv-node/rm/rates/,284,0,0
+1645085333598,286,rm/rates/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1192,1022,1,1,https://www.bjbsoft.com/inv-node/rm/rates/,286,0,0
+1645085333884,283,sessional/pst/save,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,483,6895,1,1,https://www.bjbsoft.com/inv-node/rm/sessional/pst/save,283,0,0
+1645085334168,280,doc_entry_items-1,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,2136,885,1,1,https://www.bjbsoft.com/inv-node/rm/entry/doc_entry_items,280,0,0
+1645085334449,287,inv-node/rm/rules/,200,OK,[TG] INVOICE - 1 Users 1-1,text,true,,1509,1009,1,1,https://www.bjbsoft.com/inv-node/rm/rules/,287,0,0
+1645085334737,109,/inv-node/rm/wp/,Non HTTP response code: javax.net.ssl.SSLException,Non HTTP response message: java.net.SocketException: Socket closed,[TG] INVOICE - 1 Users 1-1,text,false,,3685,0,1,1,https://www.bjbsoft.com/inv-node/rm/wp/,0,0,0
