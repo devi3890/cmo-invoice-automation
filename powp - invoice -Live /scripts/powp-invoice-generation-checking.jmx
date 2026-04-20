@@ -1072,7 +1072,55 @@ vars.put(&quot;holidayDates&quot;, JSON.stringify(holidayDates));
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
               </HTTPSamplerProxy>
-              <hashTree/>
+              <hashTree>
+                <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+                  <stringProp name="scriptLanguage">javascript</stringProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="cacheKey">true</stringProp>
+                  <stringProp name="script">var response = JSON.parse(prev.getResponseDataAsString())
+var data = response[&quot;data&quot;]
+var paycycleperiod = data.payCyclePeriod
+
+var paycycleStartDate
+var paycycleEndDate
+
+for (var i = 0; i &lt; paycycleperiod.length; i++) {
+
+    if (paycycleperiod[i].selectvalue == 1) {
+
+        paycycleStartDate = paycycleperiod[i-1].start_date
+        paycycleEndDate = paycycleperiod[i-1].end_date
+    }
+}
+
+vars.put(&quot;paycycleStartDate&quot;,paycycleStartDate)
+vars.put(&quot;paycycleEndDate&quot;,paycycleEndDate)
+log.info(&quot;paycycleStartDate is..&quot;+paycycleStartDate)
+log.info(&quot;paycycleEndDate is..&quot;+paycycleEndDate)
+
+
+
+// 🔥 Convert dd/MM/yyyy → yyyy-MM-dd
+function formatDate(dateStr) {
+    var parts = dateStr.split(&quot;/&quot;)
+    return parts[2] + &quot;-&quot; + parts[1] + &quot;-&quot; + parts[0]
+}
+
+var formattedStartDate = formatDate(paycycleStartDate)
+var formattedEndDate = formatDate(paycycleEndDate)
+
+log.info(&quot;Start Date: &quot; + formattedStartDate)
+log.info(&quot;End Date: &quot; + formattedEndDate)
+
+
+vars.put(&quot;invoice_start_date&quot;, formattedStartDate)
+vars.put(&quot;invoice_end_date&quot;, formattedEndDate)
+
+</stringProp>
+                </JSR223PostProcessor>
+                <hashTree/>
+              </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="generate/generated_invoices" enabled="true">
                 <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -1350,7 +1398,7 @@ vars.put(&quot;role_name&quot;,role_name)
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">{&quot;hid&quot;:1,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:57,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;2026-04-06&quot;,&quot;invoice_end_date&quot;:&quot;2026-04-12&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2026-04-06&quot;,&quot;end_date&quot;:&quot;2026-04-12&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:1,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
+                      <stringProp name="Argument.value">{&quot;hid&quot;:1,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:57,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;${invoice_start_date}&quot;,&quot;invoice_end_date&quot;:&quot;${invoice_end_date}&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;${paycycleStartDate}-${paycycleEndDate}&quot;,&quot;start_date&quot;:&quot;${invoice_start_date}&quot;,&quot;end_date&quot;:&quot;${invoice_end_date}&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:1,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                     </elementProp>
                   </collectionProp>
@@ -1379,7 +1427,7 @@ vars.put(&quot;role_name&quot;,role_name)
 
 var response = JSON.parse(prev.getResponseDataAsString());
 var data = response[&quot;data&quot;];
-var counter = data.length;
+var counter = (data.length)-1;
 var invoiceIds = [];
 var displayInvoiceNums = [];
 
@@ -1409,7 +1457,7 @@ log.info(&quot;number of generated invoices---&quot; +counter);
                     <collectionProp name="Arguments.arguments">
                       <elementProp name="" elementType="HTTPArgument">
                         <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                        <stringProp name="Argument.value">{&quot;hid&quot;:1,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:57,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;2026-04-06&quot;,&quot;invoice_end_date&quot;:&quot;2026-04-12&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;2026-04-06&quot;,&quot;end_date&quot;:&quot;2026-04-12&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:1,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
+                        <stringProp name="Argument.value">{&quot;hid&quot;:1,&quot;service_id&quot;:39,&quot;sesuid&quot;:[19],&quot;inv_gen_priority_id&quot;:57,&quot;pay_cycle_month&quot;:1,&quot;pay_cycle_year&quot;:2026,&quot;pay_cycle_type&quot;:&quot;&quot;,&quot;pay_cycle_name&quot;:&quot;&quot;,&quot;invoice_start_date&quot;:&quot;${invoice_start_date}&quot;,&quot;invoice_end_date&quot;:&quot;${invoice_end_date}&quot;,&quot;cutoff_date&quot;:0,&quot;no_of_days&quot;:&quot;&quot;,&quot;pay_cycle_period&quot;:&quot;${paycycleStartDate}-${paycycleEndDate}&quot;,&quot;start_date&quot;:&quot;${invoice_start_date}&quot;,&quot;end_date&quot;:&quot;${invoice_end_date}&quot;,&quot;memberid&quot;:&quot;&quot;,&quot;usertype&quot;:5,&quot;pay_cycle_id&quot;:3,&quot;is_admin&quot;:true,&quot;name&quot;:&quot;&quot;,&quot;authrole&quot;:0,&quot;decimalCalObj&quot;:{&quot;hid&quot;:1,&quot;isRoundOff&quot;:1,&quot;decimalCnt&quot;:2,&quot;displayDecimalCnt&quot;:2,&quot;display_sign_off&quot;:1},&quot;sid&quot;:45,&quot;role_id&quot;:[40],&quot;status&quot;:[0,7]}</stringProp>
                         <stringProp name="Argument.metadata">=</stringProp>
                       </elementProp>
                     </collectionProp>

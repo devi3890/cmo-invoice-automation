@@ -1,0 +1,9 @@
+invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
+"SSW9559R","13/04/2026 - 20/04/2026","Adam NAJEM","12:00","1657.5","1657.5","1657.5","165.75","165.75","1823.25","1823.25","PASS","undefined","Shift on 2026-04-13 is Holiday: Autumn Holiday. "
+"SSW9558","13/04/2026 - 20/04/2026","Amanda BURBIDGE","24:00","3315","3315","3315","0","0","3315","3315","PASS","undefined","Shift on 2026-04-16 is Holiday: Autumn Holiday. Shift on 2026-04-17 is Holiday: Autumn Holiday. "
+"SSW9557","13/04/2026 - 20/04/2026","Andrew LAM","36:00","4972.5","4972.5","4972.5","0","0","4972.5","4972.5","PASS","undefined","Shift on 2026-04-13 is Holiday: Autumn Holiday. Shift on 2026-04-15 is Holiday: Autumn Holiday. Shift on 2026-04-17 is Holiday: Autumn Holiday. "
+"SSW9556R","13/04/2026 - 20/04/2026","Hazem HAMDAN","24:00","3361.04","3361.04","3361.04","336.1","336.104","3697.14","3697.144","PASS","Hand over time for new Dr Andrew for shift on Monday 07:00-19:00- Sunday Shift ended till 19:00-07:20","-"
+"SSW9555R","13/04/2026 - 20/04/2026","Keivan Lamei JAVAN","36:00","5257.5","5257.5","5257.5","525.75","525.75","5783.25","5783.25","PASS","undefined","Shift on 2026-04-14 is Holiday: Autumn Holiday. Shift on 2026-04-16 is Holiday: Autumn Holiday. "
+"SSW9554","13/04/2026 - 20/04/2026","Kyrolos ASSAAD","12:00","1657.5","1657.5","1657.5","0","0","1657.5","1657.5","PASS","undefined","Shift on 2026-04-15 is Holiday: Autumn Holiday. "
+"SSW9553R","13/04/2026 - 20/04/2026","Mohammad SIRAJEE","12:00","1657.5","1657.5","1657.5","165.75","165.75","1823.25","1823.25","PASS","undefined","-"
+"SSW9552","13/04/2026 - 20/04/2026","Sue SIOW","12:00","1657.5","1657.5","1657.5","0","0","1657.5","1657.5","PASS","undefined","Shift on 2026-04-14 is Holiday: Autumn Holiday. "

@@ -1,54 +1,280 @@
-2026-03-30 17:43:18,303 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2026-03-30 17:43:18,312 INFO o.a.j.JMeter: Loading user properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/user.properties
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Loading system properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/system.properties
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.protocol=https
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.serverName=portal.bijib.com
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.serverPort=443
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.users=1
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.duration=1
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.startupDelay=1
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.rampup=1
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.randomDelay=0
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.constantDelay=0
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.loopCount=1
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.dataFile=../data/master-data.csv
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.debug=false
-2026-03-30 17:43:18,313 INFO o.a.j.JMeter: Setting System property: jmeter.userSessionLoopCount=1
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: Version 5.4.1
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: java.version=1.8.0_482
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: os.name=Linux
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: os.arch=amd64
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: os.version=6.17.0-19-generic
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: file.encoding=UTF-8
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: java.awt.headless=null
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: Max memory     =1073741824
-2026-03-30 17:43:18,319 INFO o.a.j.JMeter: Available Processors =6
-2026-03-30 17:43:18,322 INFO o.a.j.JMeter: Default Locale=English (EN)
-2026-03-30 17:43:18,322 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2026-03-30 17:43:18,322 INFO o.a.j.JMeter: JMeterHome=/home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1
-2026-03-30 17:43:18,323 INFO o.a.j.JMeter: user.dir  =/home/devi/Documents/devi-owner/jmeter/Waratah PVT Hospital - invoice -Live/ModPay - Invoice-generation-checking-0021-SK
-2026-03-30 17:43:18,323 INFO o.a.j.JMeter: PWD       =/home/devi/Documents/devi-owner/jmeter/Waratah PVT Hospital - invoice -Live/ModPay - Invoice-generation-checking-0021-SK
-2026-03-30 17:43:18,323 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: devi-MS-7C13 FullName: devi-MS-7C13
-2026-03-30 17:43:18,414 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
-2026-03-30 17:43:18,468 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2026-03-30 17:43:19,439 INFO o.a.j.JMeter: Loading file: scripts/invoice-generation-checking.jmx
-2026-03-30 17:43:19,441 INFO o.a.j.s.FileServer: Default base='/home/devi/Documents/devi-owner/jmeter/Waratah PVT Hospital - invoice -Live/ModPay - Invoice-generation-checking-0021-SK'
-2026-03-30 17:43:19,442 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/Waratah PVT Hospital - invoice -Live/ModPay - Invoice-generation-checking-0021-SK/scripts'
-2026-03-30 17:43:19,555 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2026-03-30 17:43:19,570 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2026-03-30 17:43:19,571 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2026-03-30 17:43:19,573 INFO o.a.j.s.SaveService: Loading file: scripts/invoice-generation-checking.jmx
-2026-03-30 17:43:19,752 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-03-30 17:43:19,753 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-03-30 17:43:19,753 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-03-30 17:43:19,753 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-03-30 17:43:19,753 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2026-03-30 17:43:19,753 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2026-03-30 17:43:19,819 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/Waratah PVT Hospital - invoice -Live/ModPay - Invoice-generation-checking-0021-SK/scripts'
-2026-03-30 17:43:20,357 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2026-03-30 17:43:20,357 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2026-03-30 17:43:20,357 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2026-03-30 17:43:20,357 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2026-03-30 17:43:20,475 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2026-04-20 12:46:01,940 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Loading user properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/user.properties
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Loading system properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/system.properties
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Setting System property: jmeter.protocol=https
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Setting System property: jmeter.serverName=portal.bijib.com
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Setting System property: jmeter.serverPort=443
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Setting System property: jmeter.users=1
+2026-04-20 12:46:01,950 INFO o.a.j.JMeter: Setting System property: jmeter.duration=1
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.startupDelay=1
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.rampup=1
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.randomDelay=0
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.constantDelay=0
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.loopCount=1
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.dataFile=../data/master-data.csv
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.debug=false
+2026-04-20 12:46:01,951 INFO o.a.j.JMeter: Setting System property: jmeter.userSessionLoopCount=1
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: Version 5.4.1
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: java.version=1.8.0_482
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: os.name=Linux
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: os.arch=amd64
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: os.version=6.17.0-19-generic
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: java.awt.headless=null
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-04-20 12:46:01,956 INFO o.a.j.JMeter: Available Processors =6
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: JMeterHome=/home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: user.dir  =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Waratah - invoice -Live
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: PWD       =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Waratah - invoice -Live
+2026-04-20 12:46:01,960 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: devi-MS-7C13 FullName: devi-MS-7C13
+2026-04-20 12:46:02,050 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
+2026-04-20 12:46:02,104 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-04-20 12:46:03,068 INFO o.a.j.JMeter: Loading file: scripts/waratah-invoice-generation-checking.jmx
+2026-04-20 12:46:03,069 INFO o.a.j.s.FileServer: Default base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Waratah - invoice -Live'
+2026-04-20 12:46:03,070 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Waratah - invoice -Live/scripts'
+2026-04-20 12:46:03,183 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-04-20 12:46:03,195 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-04-20 12:46:03,196 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-04-20 12:46:03,199 INFO o.a.j.s.SaveService: Loading file: scripts/waratah-invoice-generation-checking.jmx
+2026-04-20 12:46:03,377 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-20 12:46:03,377 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-20 12:46:03,377 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-20 12:46:03,378 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-20 12:46:03,378 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-04-20 12:46:03,378 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-04-20 12:46:03,441 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Waratah - invoice -Live/scripts'
+2026-04-20 12:46:03,996 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-04-20 12:46:03,996 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2026-04-20 12:46:03,997 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-04-20 12:46:03,997 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-04-20 12:46:04,110 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2026-04-20 12:49:24,262 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-20 12:49:24,263 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-20 12:49:24,263 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-20 12:49:24,264 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-04-20 12:49:24,264 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-04-20 12:49:24,299 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-20 12:49:24,429 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG] INVOICE - MASTER
+2026-04-20 12:49:24,429 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG] INVOICE - MASTER.
+2026-04-20 12:49:24,429 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-20 12:49:24,430 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-04-20 12:49:24,442 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-20 12:49:24,443 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-20 12:49:24,446 INFO o.a.j.t.JMeterThread: Thread started: [TG] INVOICE - MASTER 1-1
+2026-04-20 12:49:24,448 INFO o.a.j.s.FileServer: Stored: data/master-data.csv
+2026-04-20 12:49:24,466 INFO o.a.j.u.BeanShellTestElement: Failed to delete the files
+2026-04-20 12:49:24,584 INFO o.a.j.p.j.s.J.generate-ClientId: clientId is..EZIHDPUL03X52Q6677722O6R
+2026-04-20 12:49:24,596 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = devi-MS-7C13
+2026-04-20 12:49:24,602 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-04-20 12:49:25,058 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-04-20 12:49:25,068 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-04-20 12:49:25,069 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-04-20 12:49:25,115 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-04-20 12:49:25,117 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-04-20 12:49:25,117 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-04-20 12:49:25,486 INFO o.a.j.e.J.JSR223 PostProcessor: undefined
+2026-04-20 12:49:29,943 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleStartDate is..06/04/2026
+2026-04-20 12:49:29,944 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleEndDate is..19/04/2026
+2026-04-20 12:49:29,953 INFO o.a.j.e.J.JSR223 PostProcessor: Start Date: 2026-04-06
+2026-04-20 12:49:29,953 INFO o.a.j.e.J.JSR223 PostProcessor: End Date: 2026-04-19
+2026-04-20 12:49:31,673 INFO o.a.j.e.J.superTax_with_efective_dates_patientseensessional_onsite: superTaxRate effectivedates is....29/8/2022,1/7/2024,1/7/2023,1/7/2025
+2026-04-20 12:49:31,673 INFO o.a.j.e.J.superTax_with_efective_dates_patientseensessional_onsite: superTaxRates is....10.5,11.5,11,12
+2026-04-20 12:49:31,866 INFO o.a.j.e.J.super_eligible_in_meetings and teachings: Super Eligible Roles (Med Roster): CMO
+2026-04-20 12:49:33,151 INFO o.a.j.e.J.JSR223 PostProcessor: number of generated invoices---7
+2026-04-20 12:49:33,504 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;DTT
+2026-04-20 12:49:33,506 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:33,508 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Ali BAALBAKI
+2026-04-20 12:49:33,886 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:34,263 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:34,263 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 1
+2026-04-20 12:49:34,265 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = DTT
+2026-04-20 12:49:34,294 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:34,336 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo1
+2026-04-20 12:49:34,336 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:34,337 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:34,337 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:34,338 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:34,339 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:34,340 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:34,340 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:34,341 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:34,345 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..1620
+2026-04-20 12:49:34,346 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..162
+2026-04-20 12:49:34,346 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..1782
+2026-04-20 12:49:34,347 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..0
+2026-04-20 12:49:34,348 INFO o.a.j.e.J.final_billing_total - super included: num is..0
+2026-04-20 12:49:34,355 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:34,357 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:34,695 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;DIT
+2026-04-20 12:49:34,695 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:34,695 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Christina YANG
+2026-04-20 12:49:35,018 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:35,329 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:35,330 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 1
+2026-04-20 12:49:35,332 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = DIT
+2026-04-20 12:49:35,335 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-07 → Autumn Holiday
+2026-04-20 12:49:35,337 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:35,349 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:35,360 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo1
+2026-04-20 12:49:35,360 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:35,360 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:35,361 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:35,361 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:35,362 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:35,363 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:35,363 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:35,364 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:35,365 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..1620
+2026-04-20 12:49:35,365 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..162
+2026-04-20 12:49:35,365 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..1782
+2026-04-20 12:49:35,365 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..0
+2026-04-20 12:49:35,366 INFO o.a.j.e.J.final_billing_total - super included: num is..0
+2026-04-20 12:49:35,366 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:35,367 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:35,696 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;IND
+2026-04-20 12:49:35,696 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....0
+2026-04-20 12:49:35,697 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;India CORDONY
+2026-04-20 12:49:35,993 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:36,304 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:36,305 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 4
+2026-04-20 12:49:36,308 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = IND
+2026-04-20 12:49:36,312 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
+2026-04-20 12:49:36,314 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:36,315 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
+2026-04-20 12:49:36,315 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:36,316 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
+2026-04-20 12:49:36,316 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:36,317 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
+2026-04-20 12:49:36,317 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:36,330 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:36,339 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo4
+2026-04-20 12:49:36,339 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:36,339 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:36,340 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:36,340 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:36,341 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:36,341 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:36,341 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:36,341 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:36,342 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..6480
+2026-04-20 12:49:36,343 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..0
+2026-04-20 12:49:36,343 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..5785.72
+2026-04-20 12:49:36,343 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..694.28
+2026-04-20 12:49:36,343 INFO o.a.j.e.J.final_billing_total - super included: num is..0.005714285714930156
+2026-04-20 12:49:36,344 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:36,344 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:36,673 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;PRV
+2026-04-20 12:49:36,673 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:36,674 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Michael LIU
+2026-04-20 12:49:36,987 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:37,301 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:37,301 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 2
+2026-04-20 12:49:37,304 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = PRV
+2026-04-20 12:49:37,307 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-12 → Autumn Holiday
+2026-04-20 12:49:37,309 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:37,330 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:37,342 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo2
+2026-04-20 12:49:37,342 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:37,343 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:37,343 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:37,343 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:37,344 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:37,344 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:37,345 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:37,345 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:37,347 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..3240
+2026-04-20 12:49:37,347 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..324
+2026-04-20 12:49:37,347 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..3564
+2026-04-20 12:49:37,347 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..0
+2026-04-20 12:49:37,348 INFO o.a.j.e.J.final_billing_total - super included: num is..0
+2026-04-20 12:49:37,349 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:37,349 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:37,674 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;IND
+2026-04-20 12:49:37,675 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:37,676 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Micheal TROY
+2026-04-20 12:49:37,986 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:38,283 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:38,283 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 1
+2026-04-20 12:49:38,284 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = IND
+2026-04-20 12:49:38,284 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
+2026-04-20 12:49:38,285 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:38,289 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:38,294 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo1
+2026-04-20 12:49:38,294 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:38,294 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:38,295 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:38,295 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:38,295 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:38,296 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:38,296 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:38,296 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:38,297 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..1620
+2026-04-20 12:49:38,297 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..144.64
+2026-04-20 12:49:38,297 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..1591.07
+2026-04-20 12:49:38,297 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..173.57
+2026-04-20 12:49:38,298 INFO o.a.j.e.J.final_billing_total - super included: num is..0.0014285714285051654
+2026-04-20 12:49:38,299 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:38,299 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:38,630 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;IND
+2026-04-20 12:49:38,631 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:38,632 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Mona LIU
+2026-04-20 12:49:38,943 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:39,260 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:39,261 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 1
+2026-04-20 12:49:39,264 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = IND
+2026-04-20 12:49:39,267 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-10 → Autumn Holiday
+2026-04-20 12:49:39,268 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:39,284 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:39,293 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo1
+2026-04-20 12:49:39,294 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:39,294 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:39,294 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:39,294 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:39,295 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:39,295 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:39,296 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:39,296 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:39,297 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..1620
+2026-04-20 12:49:39,297 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..144.64
+2026-04-20 12:49:39,298 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..1591.07
+2026-04-20 12:49:39,298 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..173.57
+2026-04-20 12:49:39,298 INFO o.a.j.e.J.final_billing_total - super included: num is..0.0014285714285051654
+2026-04-20 12:49:39,299 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:39,299 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:39,627 INFO o.a.j.e.J.JSR223 PostProcessor: super_annuation_entitytypecode is;;;;;;;;;;;;;;;;;;;;;;;IND
+2026-04-20 12:49:39,627 INFO o.a.j.e.J.JSR223 PostProcessor: gst is....1
+2026-04-20 12:49:39,628 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Sarangi MUDUGAMUWA HEWAGE
+2026-04-20 12:49:39,942 INFO o.a.j.e.J.JSR223 PostProcessor-wpth: super tax rate is12
+2026-04-20 12:49:40,249 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: ---------- ONSITE CALCULATION START ----------
+2026-04-20 12:49:40,250 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: Number of Med roster shifts: 2
+2026-04-20 12:49:40,252 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: super_annuation_entitytypecode = IND
+2026-04-20 12:49:40,255 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-06 → Easter Monday
+2026-04-20 12:49:40,256 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:40,258 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY FOUND: 2026-04-11 → Autumn Holiday
+2026-04-20 12:49:40,258 INFO o.a.j.e.J.Cmo oncall calculations-chatgpt-added validation for rate 0 - superincuded: HOLIDAY RATE APPLIED: 135
+2026-04-20 12:49:40,278 INFO o.a.j.e.J.modifications-chatgpt-super included: Total Modification Records: 0
+2026-04-20 12:49:40,295 INFO o.a.j.e.J.final_billing_total - super included: dis_shiftinfo2
+2026-04-20 12:49:40,295 INFO o.a.j.e.J.final_billing_total - super included: dis_cov_shifts0
+2026-04-20 12:49:40,296 INFO o.a.j.e.J.final_billing_total - super included: dis_modificationinfo0
+2026-04-20 12:49:40,296 INFO o.a.j.e.J.final_billing_total - super included: dis_allowanceinfo0
+2026-04-20 12:49:40,296 INFO o.a.j.e.J.final_billing_total - super included: only_discount_inv_percentage0
+2026-04-20 12:49:40,297 INFO o.a.j.e.J.final_billing_total - super included: tot_modification_amount is..0
+2026-04-20 12:49:40,297 INFO o.a.j.e.J.final_billing_total - super included: modification_gst is..0
+2026-04-20 12:49:40,298 INFO o.a.j.e.J.final_billing_total - super included: inv_tot_modification is..0
+2026-04-20 12:49:40,298 INFO o.a.j.e.J.final_billing_total - super included: shifts/mod/allowance case executed
+2026-04-20 12:49:40,300 INFO o.a.j.e.J.final_billing_total - super included: act_billing_total is..3240
+2026-04-20 12:49:40,300 INFO o.a.j.e.J.final_billing_total - super included: act_gst_total is..289.28
+2026-04-20 12:49:40,301 INFO o.a.j.e.J.final_billing_total - super included: act_inv_total is..3182.14
+2026-04-20 12:49:40,301 INFO o.a.j.e.J.final_billing_total - super included: act_super_annonation is..347.14
+2026-04-20 12:49:40,301 INFO o.a.j.e.J.final_billing_total - super included: num is..0.0028571428570103308
+2026-04-20 12:49:40,302 INFO o.a.j.e.J.final_billing_total - super included: errorReason is..
+2026-04-20 12:49:40,303 INFO o.a.j.e.J.final_billing_total - super included: testResult is..PASS
+2026-04-20 12:49:40,308 INFO o.a.j.t.JMeterThread: Thread is done: [TG] INVOICE - MASTER 1-1
+2026-04-20 12:49:40,308 INFO o.a.j.t.JMeterThread: Thread finished: [TG] INVOICE - MASTER 1-1
+2026-04-20 12:49:40,310 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-20 12:49:40,311 INFO o.a.j.s.FileServer: Close: data/master-data.csv
+2026-04-20 12:49:40,312 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

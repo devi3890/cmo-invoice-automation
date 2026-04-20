@@ -1,7 +1,0 @@
-invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
-"HIP9153","30/03/2026 - 06/04/2026","Aashish CHOPRA","15:00","1950","1950","1950","0","0","1950","1950","PASS","undefined","-"
-"HIP9152R","30/03/2026 - 06/04/2026","Ahlam YEHIA","14:00","231","231","231","23.1","23.1","254.1","254.1","PASS","undefined","-"
-"HIP9151R","30/03/2026 - 06/04/2026","Ali KAZEMZADEH","40:00","5065.6","5065.6","5065.6","506.56","506.56","5572.16","5572.160000000001","PASS","undefined","Shift on 2026-04-03 is Holiday: Good Friday. "
-"HIP9150R","30/03/2026 - 06/04/2026","Sanjida FARUQUE","32:00","3712.96","3712.96","3712.96","371.28","371.296","4084.24","4084.256","PASS","undefined","-"
-"HIP9149R","30/03/2026 - 06/04/2026","Urmi JETHWANI","44:30","922.25","922.25","922.25","92.23","92.225","1014.48","1014.475","PASS","undefined","-"
-"HIP9148R","30/03/2026 - 06/04/2026","Dharshini SELVARAJAH","47:30","800.25","800.25","800.25","80.03","80.025","880.28","880.275","PASS","Shift extended till 18:00-08:00hrs on Sun - 29/03/2026(1hr adjusted) ","Shift on 2026-04-03 is Holiday: Good Friday. "
