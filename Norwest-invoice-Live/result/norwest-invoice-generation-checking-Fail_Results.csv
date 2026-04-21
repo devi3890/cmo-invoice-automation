@@ -1,2 +1,0 @@
-invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,validationError,ModComments,invoiceHolidayComments
-"NWP2136R","13/04/2026 - 20/04/2026","Mario LEONG","52:30","7980","7524","7524","798","752.4","8778","8276.4","FAIL","-","undefined","Shift on 2026-04-13 is Holiday: Autumn Holiday. Shift on 2026-04-13 is Holiday: Autumn Holiday. Shift on 2026-04-15 is Holiday: Autumn Holiday. "

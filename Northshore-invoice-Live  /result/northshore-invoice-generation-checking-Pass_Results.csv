@@ -1,8 +1,0 @@
-invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
-"NSP1195R","13/04/2026 - 20/04/2026","Aaron HUNG","24:30","2940","2940","2940","294","294","3234","3234","PASS","undefined","Shift on 2026-04-14 is Holiday: Autumn Holiday. Shift on 2026-04-15 is Holiday: Autumn Holiday. "
-"NSP1194","13/04/2026 - 20/04/2026","Katey LEAL","19:45","2370","2370","2370","0","0","2370","2370","PASS","undefined","Shift on 2026-04-16 is Holiday: Autumn Holiday. "
-"NSP1193R","13/04/2026 - 20/04/2026","Leah MERON ","12:30","1875","1875","1875","187.5","187.5","2062.5","2062.5","PASS","undefined","Shift on 2026-04-14 is Holiday: Autumn Holiday. "
-"NSP1192","13/04/2026 - 20/04/2026","Marra AGHAJANI","12:00","1440","1440","1440","0","0","1440","1440","PASS","undefined","-"
-"NSP1191R","13/04/2026 - 20/04/2026","Martha GONZALEZ","12:30","1500","1500","1500","150","150","1650","1650","PASS","undefined","Shift on 2026-04-17 is Holiday: Autumn Holiday. "
-"NSP1190R","13/04/2026 - 20/04/2026","Sarangi MUDUGAMUWA HEWAGE","12:30","1500","1500","1500","150","150","1650","1650","PASS","undefined","-"
-"NSP1189R","13/04/2026 - 20/04/2026","Viktor SOKOLOVSKI","37:30","4500","4500","4500","450","450","4950","4950","PASS","undefined","Shift on 2026-04-13 is Holiday: Autumn Holiday. Shift on 2026-04-15 is Holiday: Autumn Holiday. Shift on 2026-04-16 is Holiday: Autumn Holiday. "
