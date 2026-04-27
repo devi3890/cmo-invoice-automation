@@ -1,811 +1,170 @@
-2026-04-20 13:23:50,717 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2026-04-20 13:23:50,726 INFO o.a.j.JMeter: Loading user properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/user.properties
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Loading system properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/system.properties
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.protocol=https
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.serverName=portal.bijib.com
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.serverPort=443
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.users=1
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.duration=1
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.startupDelay=1
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.rampup=1
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.randomDelay=0
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.constantDelay=0
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.loopCount=1
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.dataFile=../data/master-data.csv
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.debug=false
-2026-04-20 13:23:50,727 INFO o.a.j.JMeter: Setting System property: jmeter.userSessionLoopCount=1
-2026-04-20 13:23:50,732 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: Version 5.4.1
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: java.version=1.8.0_482
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: os.name=Linux
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: os.arch=amd64
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: os.version=6.17.0-19-generic
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: file.encoding=UTF-8
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: java.awt.headless=null
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: Max memory     =1073741824
-2026-04-20 13:23:50,733 INFO o.a.j.JMeter: Available Processors =6
-2026-04-20 13:23:50,736 INFO o.a.j.JMeter: Default Locale=English (EN)
-2026-04-20 13:23:50,736 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2026-04-20 13:23:50,736 INFO o.a.j.JMeter: JMeterHome=/home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1
-2026-04-20 13:23:50,736 INFO o.a.j.JMeter: user.dir  =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest - invoice -Live
-2026-04-20 13:23:50,736 INFO o.a.j.JMeter: PWD       =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest - invoice -Live
-2026-04-20 13:23:50,737 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: devi-MS-7C13 FullName: devi-MS-7C13
-2026-04-20 13:23:50,829 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
-2026-04-20 13:23:50,883 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2026-04-20 13:23:51,874 INFO o.a.j.JMeter: Loading file: scripts/norwest-invoice-generation-checking.jmx
-2026-04-20 13:23:51,876 INFO o.a.j.s.FileServer: Default base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest - invoice -Live'
-2026-04-20 13:23:51,877 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest - invoice -Live/scripts'
-2026-04-20 13:23:51,983 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2026-04-20 13:23:51,998 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2026-04-20 13:23:51,999 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2026-04-20 13:23:52,001 INFO o.a.j.s.SaveService: Loading file: scripts/norwest-invoice-generation-checking.jmx
-2026-04-20 13:23:52,174 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-04-20 13:23:52,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-04-20 13:23:52,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-04-20 13:23:52,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-04-20 13:23:52,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2026-04-20 13:23:52,175 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2026-04-20 13:23:52,240 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest - invoice -Live/scripts'
-2026-04-20 13:23:52,870 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2026-04-20 13:23:52,870 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2026-04-20 13:23:52,870 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2026-04-20 13:23:52,870 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2026-04-20 13:23:52,984 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
-2026-04-20 13:24:04,495 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-04-20 13:24:04,496 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-04-20 13:24:04,496 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-04-20 13:24:04,496 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2026-04-20 13:24:04,496 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2026-04-20 13:24:04,532 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
-2026-04-20 13:24:04,649 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG] INVOICE - MASTER
-2026-04-20 13:24:04,650 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG] INVOICE - MASTER.
-2026-04-20 13:24:04,650 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-04-20 13:24:04,650 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
-2026-04-20 13:24:04,666 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-04-20 13:24:04,666 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-04-20 13:24:04,669 INFO o.a.j.t.JMeterThread: Thread started: [TG] INVOICE - MASTER 1-1
-2026-04-20 13:24:04,671 INFO o.a.j.s.FileServer: Stored: data/master-data.csv
-2026-04-20 13:24:04,687 INFO o.a.j.u.BeanShellTestElement: Failed to delete the files
-2026-04-20 13:24:04,798 INFO o.a.j.p.j.s.J.generate-ClientId: clientId is..1GZ6ZI1NTWDSAH43DIF7TFYLDI
-2026-04-20 13:24:04,809 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = devi-MS-7C13
-2026-04-20 13:24:04,814 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2026-04-20 13:24:05,131 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2026-04-20 13:24:05,141 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2026-04-20 13:24:05,142 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2026-04-20 13:24:05,204 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2026-04-20 13:24:05,205 INFO o.a.j.u.SSLManager: KeyStore created OK
-2026-04-20 13:24:05,205 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2026-04-20 13:24:05,559 INFO o.a.j.e.J.JSR223 PostProcessor: undefined
-2026-04-20 13:24:09,539 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleStartDate is..13/04/2026
-2026-04-20 13:24:09,540 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleEndDate is..19/04/2026
-2026-04-20 13:24:09,548 INFO o.a.j.e.J.JSR223 PostProcessor: Start Date: 2026-04-13
-2026-04-20 13:24:09,548 INFO o.a.j.e.J.JSR223 PostProcessor: End Date: 2026-04-19
-2026-04-20 13:24:11,748 INFO o.a.j.e.J.JSR223 PostProcessor: number of generated invoices---11
-2026-04-20 13:24:12,073 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Rashan DE SILVA
-2026-04-20 13:24:12,483 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:12,484 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:12,490 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:12,491 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:12,491 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:12,492 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:12,502 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,C - 19:00 - 08:00
-2026-04-20 13:24:12,503 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..13
-2026-04-20 13:24:12,504 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:12,508 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 874.5
-2026-04-20 13:24:12,509 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is874.5
-2026-04-20 13:24:12,509 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1224.3
-2026-04-20 13:24:12,509 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2098.8
-2026-04-20 13:24:12,510 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 174.9
-2026-04-20 13:24:12,510 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2273.7000000000003
-2026-04-20 13:24:12,511 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Tue - 14/04/2026,ICU CMO Night - 19:00 - 07:30
-2026-04-20 13:24:12,511 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:12,511 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:12,512 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2186.25
-2026-04-20 13:24:12,512 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,C - 16:30 - 01:00
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..8.5
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 437.25
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2710.9500000000003
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 874.5
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is3585.4500000000003
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 174.9
-2026-04-20 13:24:12,513 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is3760.3500000000004
-2026-04-20 13:24:12,514 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 594.66
-2026-04-20 13:24:12,521 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:12,522 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:12,525 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:12,525 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:12,525 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:12,526 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:12,528 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..13
-2026-04-20 13:24:12,529 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:12,531 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 874.5
-2026-04-20 13:24:12,531 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is874.5
-2026-04-20 13:24:12,532 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1224.3
-2026-04-20 13:24:12,532 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2098.8
-2026-04-20 13:24:12,532 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 174.9
-2026-04-20 13:24:12,532 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2273.7000000000003
-2026-04-20 13:24:12,533 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:12,533 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:12,533 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2186.25
-2026-04-20 13:24:12,534 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..8.5
-2026-04-20 13:24:12,534 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:12,534 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 437.25
-2026-04-20 13:24:12,534 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2710.9500000000003
-2026-04-20 13:24:12,535 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 874.5
-2026-04-20 13:24:12,535 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is3585.4500000000003
-2026-04-20 13:24:12,535 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 174.9
-2026-04-20 13:24:12,535 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is3760.3500000000004
-2026-04-20 13:24:12,536 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 594.66
-2026-04-20 13:24:12,553 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:12,554 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:12,555 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:12,555 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:12,555 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:12,555 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:12,556 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:12,595 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..3
-2026-04-20 13:24:12,596 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:12,596 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:12,597 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5946.6
-2026-04-20 13:24:12,597 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5946.6
-2026-04-20 13:24:12,598 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..594.66
-2026-04-20 13:24:12,598 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..6541.26
-2026-04-20 13:24:12,599 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:12,600 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:12,600 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:12,601 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:12,612 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:12,613 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:12,613 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 5946.6
-2026-04-20 13:24:12,613 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 594.66
-2026-04-20 13:24:12,614 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 6541.26
-2026-04-20 13:24:12,967 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Amal TADROS
-2026-04-20 13:24:13,378 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:13,378 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 7
-2026-04-20 13:24:13,381 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:13,381 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:13,381 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:13,382 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:13,382 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:13,382 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:13,382 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:13,384 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,SC N 12.5 - 07:00 - 07:30
-2026-04-20 13:24:13,385 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..0.5
-2026-04-20 13:24:13,386 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,386 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 71
-2026-04-20 13:24:13,387 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,C - 07:30 - 19:30
-2026-04-20 13:24:13,387 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:13,387 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:13,388 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1897.5
-2026-04-20 13:24:13,388 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1897.5
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 82.5
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1980
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Tue - 14/04/2026,C - 07:30 - 19:30
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..9
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,389 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1485
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Wed - 15/04/2026,ICU CMO Day - 07:00 - 19:30
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2062.5
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,ICU CMO Day - 07:00 - 19:30
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,390 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2062.5
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,C - 07:00 - 18:30
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11.5
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1897.5
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sat - 18/04/2026,Sat -CCU/ICU/WH Night - 19:00 - 06:00
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,391 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1705
-2026-04-20 13:24:13,392 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 1126.35
-2026-04-20 13:24:13,394 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:13,395 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 7
-2026-04-20 13:24:13,396 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:13,396 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:13,396 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:13,396 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:13,396 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:13,397 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:13,397 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:13,398 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..0.5
-2026-04-20 13:24:13,398 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,398 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 71
-2026-04-20 13:24:13,398 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:13,399 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:13,399 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1897.5
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1897.5
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 82.5
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1980
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..9
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1485
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:13,400 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2062.5
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2062.5
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11.5
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1897.5
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:13,401 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1705
-2026-04-20 13:24:13,402 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 1126.35
-2026-04-20 13:24:13,409 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:13,409 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:13,409 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:13,409 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:13,409 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:13,410 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:13,410 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:13,419 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..7
-2026-04-20 13:24:13,419 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:13,420 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:13,420 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..11263.5
-2026-04-20 13:24:13,420 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..11263.5
-2026-04-20 13:24:13,420 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..1126.35
-2026-04-20 13:24:13,420 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..12389.85
-2026-04-20 13:24:13,421 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:13,421 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:13,421 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:13,422 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:13,424 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:13,425 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:13,425 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 11263.5
-2026-04-20 13:24:13,425 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 1126.35
-2026-04-20 13:24:13,425 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 12389.85
-2026-04-20 13:24:13,761 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Conor CROWLEY
-2026-04-20 13:24:14,130 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:14,130 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:14,132 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:14,133 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:14,134 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,SC N 12.5 - 19:00 - 07:30
-2026-04-20 13:24:14,135 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:14,136 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:14,136 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:14,137 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 177.5
-2026-04-20 13:24:14,140 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:14,140 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:14,142 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:14,142 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:14,143 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:14,143 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:14,144 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:14,144 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 177.5
-2026-04-20 13:24:14,149 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:14,149 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:14,149 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:14,150 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:14,150 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:14,150 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:14,150 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:14,157 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..1
-2026-04-20 13:24:14,158 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:14,158 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:14,158 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1775
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1775
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..177.5
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..1952.5
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:14,159 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:14,160 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:14,161 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:14,162 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:14,162 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 1775
-2026-04-20 13:24:14,162 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 177.5
-2026-04-20 13:24:14,162 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 1952.5
-2026-04-20 13:24:14,491 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Devaka FERNANDO
-2026-04-20 13:24:14,854 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:14,854 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:14,856 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:14,856 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:14,857 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Wed - 15/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:14,858 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:14,858 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:14,858 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1896.875
-2026-04-20 13:24:14,859 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 189.6875
-2026-04-20 13:24:14,860 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:14,860 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:14,861 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:14,861 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:14,863 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:14,863 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:14,863 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1896.875
-2026-04-20 13:24:14,864 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 189.6875
-2026-04-20 13:24:14,867 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:14,868 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..1
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1896.875
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1896.875
-2026-04-20 13:24:14,875 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..189.6875
-2026-04-20 13:24:14,876 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..2086.5625
-2026-04-20 13:24:14,876 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:14,876 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:14,876 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:14,876 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:14,878 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:14,879 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:14,879 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 1896.875
-2026-04-20 13:24:14,879 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 189.6875
-2026-04-20 13:24:14,879 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 2086.5625
-2026-04-20 13:24:15,203 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Gulpan SARAJSADA
-2026-04-20 13:24:15,550 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:15,550 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:15,551 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:15,552 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:15,553 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,WD -CCU/ICU/WH Night - 19:00 - 07:00
-2026-04-20 13:24:15,553 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:15,553 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:15,553 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1704
-2026-04-20 13:24:15,554 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 170.4
-2026-04-20 13:24:15,556 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:15,556 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 1
-2026-04-20 13:24:15,558 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:15,558 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:15,559 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:15,559 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:15,559 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1704
-2026-04-20 13:24:15,560 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 170.4
-2026-04-20 13:24:15,565 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:15,565 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:15,565 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:15,566 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:15,566 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:15,566 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:15,566 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:15,572 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..1
-2026-04-20 13:24:15,572 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:15,573 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:15,573 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1704
-2026-04-20 13:24:15,573 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..1704
-2026-04-20 13:24:15,573 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..170.4
-2026-04-20 13:24:15,573 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..1874.4
-2026-04-20 13:24:15,574 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:15,574 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:15,574 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:15,574 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:15,576 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:15,577 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:15,577 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 1704
-2026-04-20 13:24:15,577 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 170.4
-2026-04-20 13:24:15,577 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 1874.4
-2026-04-20 13:24:15,900 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Li WANG
-2026-04-20 13:24:16,253 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:16,253 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 6
-2026-04-20 13:24:16,254 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,254 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:16,255 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:16,255 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:16,255 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:16,256 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,WD -CCU/ICU/WH Day - 09:00 - 19:00
-2026-04-20 13:24:16,256 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1520
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Tue - 14/04/2026,WD -CCU/ICU/WH Night - 19:00 - 07:00
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Wed - 15/04/2026,WD -CCU/ICU/WH Night - 19:00 - 07:00
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,257 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,WD -CCU/ICU/WH Night - 19:00 - 07:00
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sat - 18/04/2026,Sat -CCU/ICU/WH Day - 10:00 - 19:00
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..9
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1368
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sun - 19/04/2026,Sun -CCU/ICU/WH - 10:00 - 18:00
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..8
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1216
-2026-04-20 13:24:16,258 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 957.6
-2026-04-20 13:24:16,260 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:16,260 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 6
-2026-04-20 13:24:16,261 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,261 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:16,262 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:16,262 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:16,262 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:16,263 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:16,263 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,263 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1520
-2026-04-20 13:24:16,263 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,263 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..9
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1368
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..8
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,264 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1216
-2026-04-20 13:24:16,265 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 957.6
-2026-04-20 13:24:16,269 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:16,270 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:16,270 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:16,270 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:16,270 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:16,271 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:16,271 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:16,279 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..6
-2026-04-20 13:24:16,279 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:16,279 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:16,279 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..9576
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..9576
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..957.6
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..10533.6
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:16,280 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:16,281 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:16,283 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:16,283 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:16,283 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 9576
-2026-04-20 13:24:16,283 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 957.6
-2026-04-20 13:24:16,283 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 10533.6
-2026-04-20 13:24:16,612 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Mario LEONG
-2026-04-20 13:24:16,965 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:16,965 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 5
-2026-04-20 13:24:16,967 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,967 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,967 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:16,967 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:16,968 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,ICU CMO Night - 07:00 - 07:30
-2026-04-20 13:24:16,969 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..0.5
-2026-04-20 13:24:16,969 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,969 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 76
-2026-04-20 13:24:16,969 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,WD -CCU/ICU/WH Night - 19:00 - 07:00
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Wed - 15/04/2026,ICU CMO Night - 19:00 - 07:30
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1900
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sat - 18/04/2026,ICU CMO Night - 19:00 - 07:30
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1900
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sun - 19/04/2026,ICU CMO Night - 19:00 - 07:00
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,970 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,971 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 752.4
-2026-04-20 13:24:16,973 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:16,973 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 5
-2026-04-20 13:24:16,974 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,974 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:16,974 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:16,974 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:16,975 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..0.5
-2026-04-20 13:24:16,975 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,975 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 76
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1900
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1900
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:16,976 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824
-2026-04-20 13:24:16,977 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 752.4
-2026-04-20 13:24:16,982 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:16,983 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:16,991 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..5
-2026-04-20 13:24:16,991 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..7524
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..7524
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..752.4
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..8276.4
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:16,992 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:16,993 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:16,993 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:16,994 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:16,995 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: FAIL
-2026-04-20 13:24:16,995 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 7524
-2026-04-20 13:24:16,995 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 752.4
-2026-04-20 13:24:16,995 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 8276.4
-2026-04-20 13:24:17,315 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Pei Tong XING
-2026-04-20 13:24:17,705 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:17,706 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 6
-2026-04-20 13:24:17,707 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:17,707 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:17,707 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:17,707 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:17,708 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:17,709 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Tue - 14/04/2026,C - 09:00 - 20:00
-2026-04-20 13:24:17,710 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11
-2026-04-20 13:24:17,711 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:17,711 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1824.6170000000002
-2026-04-20 13:24:17,711 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1824.6170000000002
-2026-04-20 13:24:17,712 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 182.4617
-2026-04-20 13:24:17,712 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2007.0787000000003
-2026-04-20 13:24:17,712 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Wed - 15/04/2026,WD -CCU/ICU/WH Day - 09:00 - 19:00
-2026-04-20 13:24:17,712 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,712 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,WD -CCU/ICU/WH Day - 09:00 - 19:00
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,WD -CCU/ICU/WH Day - 09:00 - 19:00
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sat - 18/04/2026,ICU CMO Day - 07:00 - 19:30
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:17,713 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2280.7712500000002
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sun - 19/04/2026,ICU CMO Day - 07:00 - 19:30
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2280.7712500000002
-2026-04-20 13:24:17,714 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 1204.2472200000002
-2026-04-20 13:24:17,716 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:17,716 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 6
-2026-04-20 13:24:17,717 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:17,718 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-15 → Autumn Holiday
-2026-04-20 13:24:17,718 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:17,718 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:17,718 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:17,719 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..11
-2026-04-20 13:24:17,719 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 1824.6170000000002
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1824.6170000000002
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 182.4617
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is2007.0787000000003
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,720 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..10
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1824.6170000000002
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2280.7712500000002
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:17,721 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 2280.7712500000002
-2026-04-20 13:24:17,722 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 1204.2472200000002
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:17,727 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:17,735 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..6
-2026-04-20 13:24:17,735 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..12042.4722
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..12042.4722
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..1204.2472200000002
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..13246.719420000001
-2026-04-20 13:24:17,736 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:17,737 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:17,737 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:17,737 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:17,739 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:17,739 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:17,739 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 12042.4722
-2026-04-20 13:24:17,739 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 1204.2472200000002
-2026-04-20 13:24:17,739 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 13246.719420000001
-2026-04-20 13:24:18,078 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Qiao-Ling TAN
-2026-04-20 13:24:18,456 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:18,457 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:18,463 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:18,463 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:18,465 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Mon - 13/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:18,466 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,466 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,467 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,467 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sat - 18/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:18,467 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,467 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,467 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,468 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Sun - 19/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:18,468 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,468 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,468 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,468 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 532.5
-2026-04-20 13:24:18,471 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:18,471 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:18,473 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-13 → Autumn Holiday
-2026-04-20 13:24:18,473 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:18,474 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:18,475 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:18,476 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 532.5
-2026-04-20 13:24:18,480 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:18,481 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:18,488 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..3
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5325
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5325
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..532.5
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..5857.5
-2026-04-20 13:24:18,489 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:18,490 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:18,490 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:18,490 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:18,492 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:18,492 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:18,492 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 5325
-2026-04-20 13:24:18,492 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 532.5
-2026-04-20 13:24:18,492 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 5857.5
-2026-04-20 13:24:18,818 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Rosmiyati MOHAMMED ZABIDI
-2026-04-20 13:24:19,186 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:19,187 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 2
-2026-04-20 13:24:19,188 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:19,188 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:19,188 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:19,189 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,ICU CMO Night - 19:00 - 07:30
-2026-04-20 13:24:19,190 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,190 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,190 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:19,191 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,C - 18:00 - 07:30
-2026-04-20 13:24:19,191 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..13.5
-2026-04-20 13:24:19,191 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 142
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is142
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 710
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is852
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 994
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1846
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 71
-2026-04-20 13:24:19,192 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1917
-2026-04-20 13:24:19,193 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 369.2
-2026-04-20 13:24:19,194 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:19,195 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 2
-2026-04-20 13:24:19,196 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:19,196 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:19,196 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:19,197 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,197 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,197 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1775
-2026-04-20 13:24:19,198 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..13.5
-2026-04-20 13:24:19,198 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: block one: Split shift + No private hrs - split exists
-2026-04-20 13:24:19,198 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 142
-2026-04-20 13:24:19,198 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is142
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 710
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is852
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 994
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1846
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: split_shift_amt is 71
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: tot_split_shift_onSiteAmount is1917
-2026-04-20 13:24:19,199 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 369.2
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:19,204 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:19,213 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..2
-2026-04-20 13:24:19,213 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:19,213 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:19,213 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..3692
-2026-04-20 13:24:19,213 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..3692
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..369.2
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..4061.2
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:19,214 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:19,216 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:19,216 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:19,216 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 3692
-2026-04-20 13:24:19,216 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 369.2
-2026-04-20 13:24:19,217 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 4061.2
-2026-04-20 13:24:19,537 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Stephen MADDEN
-2026-04-20 13:24:19,886 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:19,887 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:19,888 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:19,889 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:19,889 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:19,889 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:19,890 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Tue - 14/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:19,890 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,890 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,890 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,890 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Thur - 16/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: displayShiftTitle is..Fri - 17/04/2026,SC-D12.5 - 07:00 - 19:30
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,891 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 546.7125
-2026-04-20 13:24:19,893 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: ---------- ONSITE CALCULATION START ----------
-2026-04-20 13:24:19,893 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Number of Med roster shifts: 3
-2026-04-20 13:24:19,894 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-14 → Autumn Holiday
-2026-04-20 13:24:19,894 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-16 → Autumn Holiday
-2026-04-20 13:24:19,894 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: HOLIDAY FOUND: 2026-04-17 → Autumn Holiday
-2026-04-20 13:24:19,894 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user has med shifts
-2026-04-20 13:24:19,895 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: totalHours are..12.5
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: Single shift calculation
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: single shift amount is 1822.375
-2026-04-20 13:24:19,896 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-added validation for rate 0 - working version e1: user is gst registered - gst tax calculated 546.7125
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Records: 0
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: anyModCommentsundefined
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: mod_commentsundefined
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: === Final Modification Summary ===
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification Amount: 0
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: Total Modification GST: 0
-2026-04-20 13:24:19,901 INFO o.a.j.e.J.modifications-chatgpt-e: Total (Amount + GST): 0
-2026-04-20 13:24:19,907 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_shiftinfo is from final billing ..3
-2026-04-20 13:24:19,907 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_modificationinfo is from final billing ..0
-2026-04-20 13:24:19,907 INFO o.a.j.e.J.final_billing_total - chatgpt-e: dis_allowanceinfo is from final billing ..0
-2026-04-20 13:24:19,907 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5467.125
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteBillingTotal is..5467.125
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteGST is..546.7125
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: onsiteInvoiceTot is..6013.8375
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: tot_modification_amount is..0
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: modification_gst is..0
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: inv_tot_modification is..0
-2026-04-20 13:24:19,908 INFO o.a.j.e.J.final_billing_total - chatgpt-e: shifts/mod/allowance case executed
-2026-04-20 13:24:19,910 INFO o.a.j.e.J.final_billing_total - chatgpt-e: errorReason is..
-2026-04-20 13:24:19,911 INFO o.a.j.e.J.final_billing_total - chatgpt-e: testResult is: PASS
-2026-04-20 13:24:19,911 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Billing_Total: 5467.125
-2026-04-20 13:24:19,911 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_GST_Total: 546.7125
-2026-04-20 13:24:19,911 INFO o.a.j.e.J.final_billing_total - chatgpt-e: Exp_Invoice_Total: 6013.8375
-2026-04-20 13:24:19,914 INFO o.a.j.t.JMeterThread: Thread is done: [TG] INVOICE - MASTER 1-1
-2026-04-20 13:24:19,914 INFO o.a.j.t.JMeterThread: Thread finished: [TG] INVOICE - MASTER 1-1
-2026-04-20 13:24:19,916 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-04-20 13:24:19,916 INFO o.a.j.s.FileServer: Close: data/master-data.csv
-2026-04-20 13:24:19,917 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-27 12:35:33,820 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-27 12:35:33,829 INFO o.a.j.JMeter: Loading user properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/user.properties
+2026-04-27 12:35:33,829 INFO o.a.j.JMeter: Loading system properties from: /home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1/bin/system.properties
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.protocol=https
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.serverName=portal.bijib.com
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.serverPort=443
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.users=1
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.duration=1
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.startupDelay=1
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.rampup=1
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.randomDelay=0
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.constantDelay=0
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.loopCount=1
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.dataFile=../data/master-data.csv
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.debug=false
+2026-04-27 12:35:33,830 INFO o.a.j.JMeter: Setting System property: jmeter.userSessionLoopCount=1
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: Version 5.4.1
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: java.version=1.8.0_482
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: os.name=Linux
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: os.arch=amd64
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: os.version=6.17.0-22-generic
+2026-04-27 12:35:33,835 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-04-27 12:35:33,836 INFO o.a.j.JMeter: java.awt.headless=null
+2026-04-27 12:35:33,836 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-04-27 12:35:33,836 INFO o.a.j.JMeter: Available Processors =6
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: JMeterHome=/home/devi/Documents/devi-owner/Apps/apache-jmeter-5.4.1
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: user.dir  =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest-invoice-Live
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: PWD       =/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest-invoice-Live
+2026-04-27 12:35:33,839 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: devi-MS-7C13 FullName: devi-MS-7C13
+2026-04-27 12:35:33,931 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
+2026-04-27 12:35:33,985 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-04-27 12:35:34,966 INFO o.a.j.JMeter: Loading file: scripts/norwest-invoice-generation-checking.jmx
+2026-04-27 12:35:34,967 INFO o.a.j.s.FileServer: Default base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest-invoice-Live'
+2026-04-27 12:35:34,968 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest-invoice-Live/scripts'
+2026-04-27 12:35:35,078 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-04-27 12:35:35,094 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-04-27 12:35:35,095 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-04-27 12:35:35,098 INFO o.a.j.s.SaveService: Loading file: scripts/norwest-invoice-generation-checking.jmx
+2026-04-27 12:35:35,289 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-27 12:35:35,289 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-27 12:35:35,289 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-27 12:35:35,290 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-27 12:35:35,290 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-04-27 12:35:35,290 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-04-27 12:35:35,356 INFO o.a.j.s.FileServer: Set new base='/home/devi/Documents/devi-owner/jmeter/cmo-invoice-automation/Norwest-invoice-Live/scripts'
+2026-04-27 12:35:35,961 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-04-27 12:35:35,961 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2026-04-27 12:35:35,961 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-04-27 12:35:35,961 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-04-27 12:35:36,067 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2026-04-27 12:36:08,569 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-27 12:36:08,570 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-27 12:36:08,570 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-27 12:36:08,571 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-04-27 12:36:08,571 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-04-27 12:36:08,603 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-27 12:36:08,727 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : [TG] INVOICE - MASTER
+2026-04-27 12:36:08,727 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group [TG] INVOICE - MASTER.
+2026-04-27 12:36:08,727 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-27 12:36:08,727 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-04-27 12:36:08,739 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-27 12:36:08,739 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-27 12:36:08,743 INFO o.a.j.t.JMeterThread: Thread started: [TG] INVOICE - MASTER 1-1
+2026-04-27 12:36:08,745 INFO o.a.j.s.FileServer: Stored: data/master-data.csv
+2026-04-27 12:36:08,761 INFO o.a.j.u.BeanShellTestElement: Files deleted successfully
+2026-04-27 12:36:08,881 INFO o.a.j.p.j.s.J.generate-ClientId: clientId is..T1BB67CPYFJULVOQZGS0PB9
+2026-04-27 12:36:08,891 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = devi-MS-7C13
+2026-04-27 12:36:08,896 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-04-27 12:36:08,964 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-04-27 12:36:08,970 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-04-27 12:36:08,970 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-04-27 12:36:09,004 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-04-27 12:36:09,005 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-04-27 12:36:09,005 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-04-27 12:36:09,326 INFO o.a.j.e.J.JSR223 PostProcessor: undefined
+2026-04-27 12:36:13,710 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleStartDate is..20/04/2026
+2026-04-27 12:36:13,711 INFO o.a.j.e.J.JSR223 PostProcessor: paycycleEndDate is..26/04/2026
+2026-04-27 12:36:13,719 INFO o.a.j.e.J.JSR223 PostProcessor: Start Date: 2026-04-20
+2026-04-27 12:36:13,720 INFO o.a.j.e.J.JSR223 PostProcessor: End Date: 2026-04-26
+2026-04-27 12:36:16,097 INFO o.a.j.e.J.JSR223 PostProcessor: number of generated invoices---13
+2026-04-27 12:36:16,610 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Aaron HUNG
+2026-04-27 12:36:17,376 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"Surgical CMO | 20/04/2026 | SC N 12.5 | 07:00 - 07:30":150}
+2026-04-27 12:36:17,392 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:17,411 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 20/04/2026 | SC N 12.5 | 07:00 - 07:30
+2026-04-27 12:36:17,907 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Amal TADROS
+2026-04-27 12:36:18,845 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"CCU/ICU/WH | 20/04/2026 | C | 09:00 - 18:00":155,"Surgical CMO | 24/04/2026 | C | 08:30 - 19:30":142,"ICU | 24/04/2026 | C | 19:30 - 03:30":165,"CCU/ICU/WH | 25/04/2026 | Sat -CCU/ICU/WH Night | 19:00 - 06:00":232.5,"ICU | 26/04/2026 | C | 19:30 - 07:00":165}
+2026-04-27 12:36:18,849 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:18,852 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 20/04/2026 | C | 09:00 - 18:00
+2026-04-27 12:36:18,853 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 24/04/2026 | C | 08:30 - 19:30
+2026-04-27 12:36:18,853 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 24/04/2026 | C | 19:30 - 03:30
+2026-04-27 12:36:18,853 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 25/04/2026 | Sat -CCU/ICU/WH Night | 19:00 - 06:00
+2026-04-27 12:36:18,854 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 26/04/2026 | C | 19:30 - 07:00
+2026-04-27 12:36:19,331 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Devaka FERNANDO
+2026-04-27 12:36:20,253 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"ICU | 20/04/2026 | ICU CMO Day | 07:00 - 19:30":164.85,"ICU | 21/04/2026 | ICU CMO Day | 07:00 - 19:30":164.85,"ICU | 22/04/2026 | ICU CMO Day | 07:00 - 19:30":164.85,"ICU | 23/04/2026 | ICU CMO Day | 07:00 - 19:30":164.85,"ICU | 24/04/2026 | ICU CMO Day | 07:00 - 19:30":164.85}
+2026-04-27 12:36:20,257 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:20,259 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 20/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:20,260 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 21/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:20,260 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 22/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:20,260 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 23/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:20,260 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 24/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:20,734 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Gaulthier TSHIBINDI
+2026-04-27 12:36:21,370 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"Surgical CMO | 24/04/2026 | SC N 12.5 | 19:00 - 07:30":142}
+2026-04-27 12:36:21,373 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:21,375 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 24/04/2026 | SC N 12.5 | 19:00 - 07:30
+2026-04-27 12:36:21,860 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Gulpan SARAJSADA
+2026-04-27 12:36:22,501 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"CCU/ICU/WH | 23/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00":142,"CCU/ICU/WH | 24/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00":142}
+2026-04-27 12:36:22,504 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:22,505 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 23/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00
+2026-04-27 12:36:22,506 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 24/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00
+2026-04-27 12:36:22,977 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Li WANG
+2026-04-27 12:36:23,778 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"CCU/ICU/WH | 22/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00":152,"CCU/ICU/WH | 24/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00":152,"CCU/ICU/WH | 25/04/2026 | Sat -CCU/ICU/WH Day | 10:00 - 19:00":152,"CCU/ICU/WH | 26/04/2026 | Sun -CCU/ICU/WH | 10:00 - 18:00":152}
+2026-04-27 12:36:23,783 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:23,785 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 22/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00
+2026-04-27 12:36:23,785 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 24/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00
+2026-04-27 12:36:23,786 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 25/04/2026 | Sat -CCU/ICU/WH Day | 10:00 - 19:00
+2026-04-27 12:36:23,786 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 26/04/2026 | Sun -CCU/ICU/WH | 10:00 - 18:00
+2026-04-27 12:36:24,252 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Mario LEONG
+2026-04-27 12:36:25,205 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"ICU | 20/04/2026 | ICU CMO Night | 07:00 - 07:30":152,"CCU/ICU/WH | 20/04/2026 | C | 18:00 - 07:00":152,"CCU/ICU/WH | 22/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00":152,"ICU | 24/04/2026 | ICU CMO Night | 19:00 - 07:30":152,"ICU | 25/04/2026 | ICU CMO Night | 19:00 - 07:30":152}
+2026-04-27 12:36:25,209 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:25,212 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 20/04/2026 | ICU CMO Night | 07:00 - 07:30
+2026-04-27 12:36:25,212 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 20/04/2026 | C | 18:00 - 07:00
+2026-04-27 12:36:25,213 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 22/04/2026 | WD -CCU/ICU/WH Night | 19:00 - 07:00
+2026-04-27 12:36:25,213 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 24/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:25,213 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 25/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:25,678 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Martha GONZALEZ
+2026-04-27 12:36:26,323 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"Surgical CMO | 21/04/2026 | SC N 12.5 | 19:00 - 07:30":142,"Surgical CMO | 26/04/2026 | SC N 12.5 | 19:00 - 07:00":150}
+2026-04-27 12:36:26,331 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:26,334 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 21/04/2026 | SC N 12.5 | 19:00 - 07:30
+2026-04-27 12:36:26,335 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 26/04/2026 | SC N 12.5 | 19:00 - 07:00
+2026-04-27 12:36:26,806 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Pei Tong XING
+2026-04-27 12:36:27,746 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"CCU/ICU/WH | 21/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00":182.4617,"CCU/ICU/WH | 23/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00":182.4617,"ICU | 25/04/2026 | ICU CMO Day | 07:00 - 19:30":203.8862,"ICU | 26/04/2026 | C | 07:00 - 20:00":182.4617}
+2026-04-27 12:36:27,751 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:27,753 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 21/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00
+2026-04-27 12:36:27,754 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  CCU/ICU/WH | 23/04/2026 | WD -CCU/ICU/WH Day | 09:00 - 19:00
+2026-04-27 12:36:27,754 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 25/04/2026 | ICU CMO Day | 07:00 - 19:30
+2026-04-27 12:36:27,754 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 26/04/2026 | C | 07:00 - 20:00
+2026-04-27 12:36:28,222 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Qiao-Ling TAN
+2026-04-27 12:36:28,886 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"Surgical CMO | 25/04/2026 | SC-D12.5 | 07:00 - 19:30":142,"Surgical CMO | 26/04/2026 | SC-D12.5 | 07:00 - 19:30":142}
+2026-04-27 12:36:28,890 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:28,892 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 25/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:28,893 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 26/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:29,357 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Rashan DE SILVA
+2026-04-27 12:36:30,148 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"ICU | 20/04/2026 | ICU CMO Night | 19:00 - 07:30":174.9,"ICU | 21/04/2026 | ICU CMO Night | 19:00 - 07:30":174.9,"ICU | 22/04/2026 | ICU CMO Night | 19:00 - 07:30":174.9,"ICU | 23/04/2026 | ICU CMO Night | 19:00 - 07:30":174.9}
+2026-04-27 12:36:30,152 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:30,153 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 20/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:30,154 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 21/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:30,154 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 22/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:30,154 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 23/04/2026 | ICU CMO Night | 19:00 - 07:30
+2026-04-27 12:36:30,630 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Rosmiyati MOHAMMED ZABIDI
+2026-04-27 12:36:31,271 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"ICU | 21/04/2026 | C | 21:00 - 06:00":142,"ICU | 22/04/2026 | C | 21:00 - 06:00":142,"ICU | 23/04/2026 | C | 21:00 - 06:00":142}
+2026-04-27 12:36:31,275 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:31,277 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 21/04/2026 | C | 21:00 - 06:00
+2026-04-27 12:36:31,277 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 22/04/2026 | C | 21:00 - 06:00
+2026-04-27 12:36:31,277 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  ICU | 23/04/2026 | C | 21:00 - 06:00
+2026-04-27 12:36:31,741 INFO o.a.j.e.J.JSR223 PostProcessor: userName is;;;;;;;;;;;;;;;;;;;;;;;Stephen MADDEN
+2026-04-27 12:36:32,371 INFO o.a.j.e.J.Cmo onsite calculations-chatgpt-get rates for the shifts including spl rate: ✅ RATE KEY MAP GENERATED: {"Surgical CMO | 20/04/2026 | SC-D12.5 | 07:00 - 19:30":145.7899932861328,"Surgical CMO | 21/04/2026 | SC-D12.5 | 07:00 - 19:30":145.7899932861328,"Surgical CMO | 22/04/2026 | SC-D12.5 | 07:00 - 19:30":145.7899932861328,"Surgical CMO | 23/04/2026 | SC-D12.5 | 07:00 - 19:30":145.7899932861328}
+2026-04-27 12:36:32,375 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: 🔍 Validating Display Rate vs Engine Rate
+2026-04-27 12:36:32,377 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 20/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:32,377 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 21/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:32,377 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 22/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:32,378 INFO o.a.j.e.J.Cmo onsite calculations-validate API AND UI(DISPLAY) rates: ✅ RATE MATCHED  Surgical CMO | 23/04/2026 | SC-D12.5 | 07:00 - 19:30
+2026-04-27 12:36:32,380 INFO o.a.j.t.JMeterThread: Thread is done: [TG] INVOICE - MASTER 1-1
+2026-04-27 12:36:32,381 INFO o.a.j.t.JMeterThread: Thread finished: [TG] INVOICE - MASTER 1-1
+2026-04-27 12:36:32,382 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-27 12:36:32,382 INFO o.a.j.s.FileServer: Close: data/master-data.csv
+2026-04-27 12:36:32,384 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

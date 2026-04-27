@@ -1,0 +1,6 @@
+invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
+"HIP9170R","20/04/2026 - 27/04/2026","Ali KAZEMZADEH","40:00","5032","5032","5032","503.2","503.2","5535.2","5535.2","PASS","undefined","-"
+"HIP9169R","20/04/2026 - 27/04/2026","Dharshini SELVARAJAH","16:00","2080","2080","2080","208","208","2288","2288","PASS","undefined","Shift on 2026-04-25 is Holiday: Anzac Day. "
+"HIP9168R","20/04/2026 - 27/04/2026","Sanjida FARUQUE","40:00","4641.2","4641.2","4641.2","464.1","464.12","5105.3","5105.32","PASS","undefined","-"
+"HIP9167R","20/04/2026 - 27/04/2026","Urmi JETHWANI","42:00","693","693","693","69.3","69.3","762.3","762.3","PASS","undefined","-"
+"HIP9166R","20/04/2026 - 27/04/2026","Ahlam YEHIA","14:00","231","231","231","23.1","23.1","254.1","254.1","PASS","undefined","-"

@@ -1,0 +1,7 @@
+invoice_num,invoice_period,userName,shift_hours,act_billing_total,exp_billing_total,exp_sub_total,act_gst_total,exp_gst_total,act_inv_total,exp_invoice_total,testResult,ModComments,invoiceHolidayComments
+"NSP1203R","20/04/2026 - 27/04/2026","Viktor SOKOLOVSKI","39:00","4740","4740","4740","474","474","5214","5214","PASS","undefined","-"
+"NSP1202R","20/04/2026 - 27/04/2026","Sanjida FARUQUE","12:30","1500","1500","1500","150","150","1650","1650","PASS","undefined","-"
+"NSP1201","20/04/2026 - 27/04/2026","Marra AGHAJANI","12:30","1500","1500","1500","0","0","1500","1500","PASS","undefined","-"
+"NSP1200R","20/04/2026 - 27/04/2026","Leah MERON ","09:00","1440","1440","1440","144","144","1584","1584","PASS","undefined","-"
+"NSP1199","20/04/2026 - 27/04/2026","Katey LEAL","25:00","3000","3000","3000","0","0","3000","3000","PASS","undefined","Shift on 2026-04-25 is Holiday: Anzac Day. "
+"NSP1198R","20/04/2026 - 27/04/2026","Dharshini SELVARAJAH","11:30","1725","1725","1725","172.5","172.5","1897.5","1897.5","PASS","undefined","-"
